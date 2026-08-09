@@ -1,0 +1,34 @@
+# Secrets and local configs
+**/config.local.json
+**/local.properties
+**/keystore.properties
+**/*.jks
+**/*.keystore
+**/.env
+**/.env.*
+deploy_keys/
+/.git-codex/
+app/velopath3_project/key
+
+# Build outputs
+**/build/
+**/.gradle/
+**/.cxx/
+**/.externalNativeBuild/
+**/captures/
+**/Debug/
+**/Release/
+app/releases/*.apk
+app/releases/*.apk_*
+
+# IDE and OS files
+**/.idea/
+**/*.iml
+**/.DS_Store
+**/*.lck
+**/*-bak
+**/fp-info-cache
+
+# Archives and generated backups
+**/backups/
+**/*.zip

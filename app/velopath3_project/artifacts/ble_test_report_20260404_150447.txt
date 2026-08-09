@@ -1,0 +1,89 @@
+﻿VeloPath BLE Test Report
+========================
+Timestamp: 2026-04-04 15:04:47
+Workspace: C:\Users\vladimir.DESKTOP-L4RFPI0\AndroidStudioProjects\velopath3
+Host: Windows (PowerShell)
+Python: 3.14 (C:\Users\vladimir.DESKTOP-L4RFPI0\AppData\Local\Programs\Python\Python314\python.exe)
+
+Firmware State
+--------------
+- Active BLE stack: user-rewritten WH-BLE106 driver (ble_link)
+- Entry point: firmware/Core/Src/main.c uses ble_link_init() only
+- BLE AT profile (from firmware/Core/Src/ble_link.c):
+  * AT+NAME=VeloPath
+  * AT+UART=57600,8,0,0
+  * AT+MODE=S (restart)
+  * AT+WMODE=0
+  * AT+MULTILINK=OFF
+  * AT+PAIR=OFF
+  * AT+PASSEN=OFF
+  * AT+TRENC=OFF
+  * AT+UARTFT=3
+  * AT+PKLEN=200
+  * AT+AUTOSLEEP=OFF
+  * AT+NOTIFY=ON
+  * AT+ENTM
+- UART: USART2 at 57600 8N1
+- Firmware flashed via STM32CubeProgrammer CLI (ST-LINK) with verification
+
+Flashing Log (summary)
+----------------------
+- STM32_Programmer_CLI.exe used from:
+  C:\ST\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.2.400.202601091506\tools\bin
+- Target: STM32F101/F103 XL-density, VDD ~3.20V
+- Reset: Software reset
+- Result: verified OK
+
+BLE Tooling / Scripts
+---------------------
+- firmware/tools/ble_stable_terminal.py
+  * Target names: VeloPath, WH-BLE 106
+  * WinRT + Bleak fallback
+  * Dynamic characteristic selection based on notify/write properties
+- firmware/tools/ble_gatt_probe.py
+- firmware/tools/ble_full_test_loop.py
+- firmware/tools/live_ble_scan.py
+
+Observed BLE Behavior
+---------------------
+- Device intermittently advertises as "VeloPath" with address D4:AD:20:B1:B4:DA
+- Advertising is not stable: often disappears between scans
+- When device is found and connection attempt occurs:
+  * WinRT path error: "Characteristic 0003cdd1-0000-1000-8000-00805f9b0131 was not found"
+  * Bleak path error: "Access Denied" during notify subscription
+  * Subsequent scans usually fail to find device
+
+Last Test Attempts (highlights)
+-------------------------------
+1) ble_stable_terminal.py
+   - Found device once (VeloPath)
+   - Fail: Unable to open BLE session (notify characteristic not found)
+   - Follow-up attempts: device not found
+
+2) ble_stable_terminal.py (after notify=ON in ble_link)
+   - Found device once (VeloPath)
+   - Fail: "Access Denied" on notify subscribe
+   - Follow-up attempts: device not found
+
+3) Manual scanning
+   - Multiple scans returned no VeloPath/WH-BLE 106 despite power cycles
+
+Constraints / Blockers
+----------------------
+- BLE advertising unstable; device rarely present in scan
+- Notify subscription failing (GATT Access Denied)
+- Without a stable BLE channel, console commands and compass stream cannot be validated end-to-end
+
+Next Technical Actions (pending)
+--------------------------------
+- Ensure continuous advertising state after AT+ENTM
+- Verify that notify characteristic exists and is accessible (module may be in a different profile)
+- If available, confirm nWake/nReset behavior and module power stability
+
+Files Referenced
+----------------
+- firmware/Core/Src/ble_link.c
+- firmware/Core/Src/main.c
+- firmware/docs/wh-ble106-report-and-docs.md
+- firmware/tools/ble_stable_terminal.py
+

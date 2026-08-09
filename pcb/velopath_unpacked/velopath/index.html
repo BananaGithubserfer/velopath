@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VeloPath</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      window.__APP_CONFIG__ = {
+        yandexMapsApiKey: "__YANDEX_MAPS_API_KEY__",
+      };
+    </script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <main class="app-card">
+        <section class="content-panel">
+          <p class="eyebrow">VeloPath</p>
+          <h1>Старт поездки начинается с точного адреса</h1>
+          <p class="lead">
+            Выберите точку отправления, проверьте ее на карте и подключите Bluetooth-устройство.
+          </p>
+
+          <div class="search-panel">
+            <label class="field-label" for="addressInput">Адрес</label>
+            <div class="input-shell">
+              <input
+                id="addressInput"
+                name="address"
+                type="text"
+                placeholder="Введите улицу, дом или точку интереса"
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </div>
+            <ul id="suggestions" class="suggestions" aria-live="polite"></ul>
+          </div>
+
+          <div class="action-row">
+            <button id="connectBluetoothButton" class="primary-button" type="button">
+              Подключить Bluetooth
+            </button>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card">
+              <p class="info-label">Выбранный адрес</p>
+              <p id="selectedAddress" class="info-value">Ожидает выбора</p>
+            </article>
+            <article class="info-card">
+              <p class="info-label">Bluetooth</p>
+              <p id="bluetoothStatus" class="info-value">Устройство не подключено</p>
+            </article>
+          </div>
+
+          <p id="appStatus" class="app-status">Готово к поиску адреса</p>
+        </section>
+
+        <section class="map-panel">
+          <div class="map-header">
+            <p class="map-title">Карта</p>
+            <p class="map-subtitle">Текущая точка будет показана здесь</p>
+          </div>
+          <div class="map-frame">
+            <div id="map" class="map-canvas" aria-label="Yandex map"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

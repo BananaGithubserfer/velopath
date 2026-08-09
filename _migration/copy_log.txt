@@ -1,0 +1,23 @@
+COPIED TREE: C:\Users\vladimir.DESKTOP-L4RFPI0\AndroidStudioProjects\velopath3 -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\app\velopath3_project
+COPIED TREE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\firmware++ -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\esp32_at_bridge
+COPIED TREE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\firmware -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\stm32_legacy_workspace
+COPIED TREE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\Velopath_meta -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\pcb\velopath_meta
+COPIED TREE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath_unpacked -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\pcb\velopath_unpacked
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath.apk -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\app\releases
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath.zip -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\archives
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\Velopath Буклет (1).pdf -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\brochures
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\Velopath Буклет (2).pdf -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\brochures
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\Velopath Буклет.pdf -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\brochures
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\1 - корпус.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\box_net_with_full_bw_logo_on_lid_final.dxf -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\box_net_with_full_bw_logo_on_lid_final.frw -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\box_net_with_full_bw_logo_on_lid_final_check.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\engrave_only.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\lid_black_preview.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\logo_current_numbered.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\logo_debug_numbered.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\logo_final_closeup.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\logo_final_numbered_debug.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\logo_highlight_groups.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\logo_highlight_subgroups.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
+COPIED FILE: C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\logo_original_closeup_refcheck.png -> C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets
