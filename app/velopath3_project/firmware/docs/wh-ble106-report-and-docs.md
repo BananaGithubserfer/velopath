@@ -6,7 +6,7 @@ This rewrite only touches the firmware project in `firmware/`. The Android appli
 
 ## Current Status
 
-Boot-time AT provisioning is currently disabled in the firmware image after hardware self-tests on 2026-04-04 showed that repeated automatic reconfiguration could push the WH-BLE106 into less reliable states on this board. The firmware keeps the BLE transport isolated in `ble_link.c`, but the module should be treated as externally provisioned until the board exposes reliable `nWake`/`nReset`-level control or direct serial provisioning.
+Boot-time AT provisioning is currently disabled in the firmware image after hardware self-tests on 2026-04-04 showed that repeated automatic reconfiguration could push the WH-BLE106 into less reliable states on this board. The firmware keeps the BLE transport isolated in `ble_link.c`, and the module should still be treated as externally provisioned until the firmware project starts using the already-routed `nWake` / `nReset` control lines or a direct serial provisioning path.
 
 ## What Was Removed
 
@@ -131,14 +131,16 @@ The driver also treats `AT+UUID` as a special case during startup configuration 
 
 ## Hardware Limitations
 
-The current CubeMX project exposes only the BLE UART pins on `PA2/PA3`. The optional WH-BLE106 control pins from the datasheet are not mapped in firmware today:
+A board-level audit on 2026-08-10 confirmed that the PCB does route the optional WH-BLE106 control pins to the STM32:
 
-- `nWake`
-- `nReset`
-- `nReload`
-- `Link`
+- `nWake` -> `PC4`
+- `nReset` -> `PA4`
+- `nReload` -> `PC5`
+- `Link` -> `PA5`
 
-That means the rewritten driver can disable auto-sleep in software, but it cannot hard-reset or externally wake the module unless those pins are also wired on the PCB and added to the project.
+The current CubeMX project still exposes only the BLE UART pins on `PA2/PA3`, so those extra control lines exist on the board but are not assigned in firmware today.
+
+That means the rewritten driver can disable auto-sleep in software, but it still cannot hard-reset or externally wake the module until those already-wired pins are added to the generated firmware project and handled in code.
 
 If you want hardware validation next, the most useful smoke checks are:
 

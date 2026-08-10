@@ -1,6 +1,6 @@
 # VeloPath - project index
 
-Last updated: 2026-04-12
+Last updated: 2026-08-10
 
 Project root:
 `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath`
@@ -38,6 +38,8 @@ Reports and explanatory documents:
   `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\reports\explanatory_note`
 - Reviews:
   `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\reports\reviews`
+- Hardware audit (schematic + PCB, 2026-08-10):
+  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\reports\hardware_audit_2026-08-10`
 
 Engineering/process docs:
 - `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\engineering\process_docs`

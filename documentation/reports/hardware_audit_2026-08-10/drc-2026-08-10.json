@@ -1,0 +1,118 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-10T21:36:53",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        },
+        {
+            "description": "Footprint doesn't match copy in library",
+            "key": "lib_footprint_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.2",
+    "schematic_parity": [],
+    "source": "velopath_final.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1548 mm)",
+            "items": [
+                {
+                    "description": "Дорожка [Net-(D13-K)] на B.Cu, длина 0,7125 mm",
+                    "pos": {
+                        "x": 26.2375,
+                        "y": 58.3
+                    },
+                    "uuid": "4e358cf9-b825-44ff-ae7d-e9af4067311d"
+                },
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 25.75967,
+                        "y": 57.929301
+                    },
+                    "uuid": "8b9e19fa-76a8-43bd-83a1-3a966feb377c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 25.75967,
+                        "y": 57.929301
+                    },
+                    "uuid": "8b9e19fa-76a8-43bd-83a1-3a966feb377c"
+                },
+                {
+                    "description": "Дорожка [Net-(D13-K)] на B.Cu, длина 1,2021 mm",
+                    "pos": {
+                        "x": 25.3875,
+                        "y": 59.15
+                    },
+                    "uuid": "b47549c8-4834-4944-bcfe-564a9d7b227a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1532 mm)",
+            "items": [
+                {
+                    "description": "Конт. пл. 3 [Net-(C25-+)] от Q1 на F.Cu",
+                    "pos": {
+                        "x": 27.17,
+                        "y": 61.18
+                    },
+                    "uuid": "59f6e29e-d143-4365-a375-f54d6fbc1de4"
+                },
+                {
+                    "description": "Дорожка [Net-(C24--)] на F.Cu, длина 3,2507 mm",
+                    "pos": {
+                        "x": 27.25,
+                        "y": 59.831424
+                    },
+                    "uuid": "f66032ae-6c38-46b5-a5c5-ca453687b7dc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}
