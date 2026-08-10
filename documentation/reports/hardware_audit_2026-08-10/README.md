@@ -8,7 +8,7 @@ This audit covers only the current KiCad hardware source set:
 - `pcb/velopath_final.kicad_pcb`
 - `velopath_final-current.net`
 
-Fresh CAD checks were run on August 10, 2026 with KiCad `10.0.2`:
+Final CAD checks were rerun on August 10, 2026 with KiCad `10.0.2` after schematic and layout cleanup:
 
 - `erc-2026-08-10.json`
 - `drc-2026-08-10.json`
@@ -17,11 +17,11 @@ Fresh CAD checks were run on August 10, 2026 with KiCad `10.0.2`:
 
 The board is largely coherent at the schematic/topology level: the STM32, WH-BLE106, LIS3MDL, charger, LDO, reset/SWD, and vibration outputs are wired in a way that matches the intended product architecture.
 
-The audit found three concrete issues that should be tracked:
+The previous blocking CAD issues found earlier in the audit are now closed:
 
-1. PCB DRC still reports three real clearance violations around the `D13` / `Q1` area.
-2. Schematic ERC still reports two unconnected STM32 pins: `PC6` and `PC7`.
-3. The BLE firmware document was stale: the board does route `nWake`, `nReset`, `nReload`, and `Link`, but the current firmware `.ioc` does not assign those pins yet.
+1. PCB DRC now reports `0` violations and `0` unconnected items.
+2. Schematic ERC now reports `0` violations.
+3. The BLE firmware document remains corrected: the board does route `nWake`, `nReset`, `nReload`, and `Link`, but the current firmware `.ioc` still does not assign those pins yet.
 
 An additional open engineering risk remains in the battery protection section: the `HY2122-AB1B` `CS` node is not obviously tied to the MOSFET current-sense node in the current netlist, so the overcurrent model should be rechecked directly against the intended application circuit before release.
 
@@ -39,7 +39,7 @@ An additional open engineering risk remains in the battery protection section: t
 - `J1` is the charger input connector.
 - `U7` is `CN3765`.
 - `PA0` on the STM32 monitors charger status through the `chrg_done` net.
-- The charge indicator LED path is present on `D13` and `U7 pin 3`; this same physical area is where the current PCB clearance errors are located.
+- The charge indicator LED path is present on `D13` and `U7 pin 3`.
 
 ### MCU and Core Support
 
@@ -70,26 +70,22 @@ An additional open engineering risk remains in the battery protection section: t
 - `DRDY` and `INT` on `LIS3MDL` are intentionally left unconnected.
 - `PC1` and `PC2` drive the right and left vibration connectors.
 
-## Confirmed Findings
+## Final CAD Status
 
-### 1. PCB clearance violations remain open
+### 1. ERC is clean
 
-Fresh DRC reports three `error`-level clearance violations:
+The final ERC run reports `0` violations.
 
-- `Net-(D13-K)` track to `GND` via at approximately `25.75967, 57.929301 mm`
-- `Net-(D13-K)` track to the same `GND` via at approximately `25.3875, 59.15 mm`
-- `Q1 pad 3` (`Net-(C25-+)`) to `Net-(C24--)` track at approximately `27.17, 61.18 mm`
+The earlier unconnected-pin findings on `PC6` and `PC7` are no longer present.
 
-These are fabrication blockers until the copper geometry is cleaned up.
+### 2. DRC is clean
 
-### 2. ERC still has two unclosed MCU pins
+The final DRC run reports:
 
-Fresh ERC reports two `error`-level unconnected pins on `U3`:
+- `0` violations
+- `0` unconnected items
 
-- `PC6` (`pin 37`)
-- `PC7` (`pin 38`)
-
-If these pins are intentionally unused, they should be marked `no connect` in the schematic to close ERC cleanly.
+The earlier clearance conflicts around `D13` / `Q1` and the later dangling `GND` stub are no longer present.
 
 ### 3. BLE hardware and BLE firmware documentation were out of sync
 
@@ -119,3 +115,7 @@ The BLE report in `app/velopath3_project/firmware/docs/wh-ble106-report-and-docs
 
 - the board does expose the WH-BLE106 control pins
 - the firmware project still does not assign them in the current `.ioc`
+
+## Final Note
+
+As of the final rerun on August 10, 2026, the checked hardware source set passes both KiCad ERC and KiCad DRC cleanly. The only remaining item from this audit is the non-rule-based design review question around the intended `HY2122-AB1B` current-sense implementation.
