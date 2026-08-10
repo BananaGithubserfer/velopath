@@ -25,6 +25,10 @@ app/releases/*.apk_*
 **/.idea/
 **/*.iml
 **/.DS_Store
+/.codex
+**/#auto_saved_files#
+**/_autosave-*.kicad_sch
+**/*.bak
 **/*.lck
 **/*-bak
 **/fp-info-cache

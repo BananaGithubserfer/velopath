@@ -1,0 +1,250 @@
+(footprint "L_Vishay_IHLP-2525"
+		(layer "B.Cu")
+		(uuid "aaccf3bb-a5a1-4a8b-bfff-886125b94fea")
+		(at 31.55 56.55 -90)
+		(descr "Inductor, Vishay, IHLP series, 6.3mmx6.3mm, Alternate KiCad Library")
+		(tags "inductor vishay ihlp smd")
+		(property "Reference" "L2"
+			(at 0 4.175 90)
+			(layer "B.SilkS")
+			(uuid "66121049-b429-4b79-87a5-03a8f6f11c49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "22 uH"
+			(at 0 -4.675 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5f2baf77-15c6-4e08-934b-0663bed2944c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d89a6cc7-bcfb-4c48-9eb7-ef236b6d74f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "coil/winding/inductor/choke/reactor"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "31f0b685-8609-4e6f-a690-6c0a3d2ae92f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Indicator" "●"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d195afc3-5a40-4225-9f69-966b7f91d3f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Rating" "A"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "916ba3f3-78b6-4d90-a14a-47b331d44d95")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/b88e05dc-f9c3-4888-bbc3-818626146e19")
+		(sheetname "/")
+		(sheetfile "velopath_final.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -4.5 3.5)
+			(end -4.5 -3.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "dac3f7e5-3ca4-4c73-ac49-ff77878861e9")
+		)
+		(fp_line
+			(start 4.5 3.5)
+			(end -4.5 3.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "e15dac5b-710d-44fc-be67-65889b241375")
+		)
+		(fp_line
+			(start -4.5 -3.5)
+			(end 4.5 -3.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "46cb8854-371f-4ec5-9996-26e0bfda631f")
+		)
+		(fp_line
+			(start 4.5 -3.5)
+			(end 4.5 3.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "526509bc-7fd5-4697-b344-0a1adfdfcb69")
+		)
+		(fp_line
+			(start -4.4 3.45)
+			(end -4.4 -3.45)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "52fa2b28-52ac-4b61-9463-1308b49c9454")
+		)
+		(fp_line
+			(start 4.4 3.45)
+			(end -4.4 3.45)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "c3d12cb3-d541-4643-ba8b-d90e96d59535")
+		)
+		(fp_line
+			(start -4.4 -3.45)
+			(end 4.4 -3.45)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "22636767-778f-4b52-adbb-ed99d722010a")
+		)
+		(fp_line
+			(start 4.4 -3.45)
+			(end 4.4 3.45)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1ddec104-d1a4-4193-a937-9a49a607da49")
+		)
+		(fp_line
+			(start -3.175 3.175)
+			(end -3.175 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "f72c818b-942e-4e8e-acc5-541eacac6e16")
+		)
+		(fp_line
+			(start 3.175 3.175)
+			(end -3.175 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4604bfe3-8f77-4a6f-96b0-b68bcd2e5ae0")
+		)
+		(fp_line
+			(start -3.175 -3.175)
+			(end 3.175 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1db61924-a292-41a9-b0cd-d29883d7c069")
+		)
+		(fp_line
+			(start 3.175 -3.175)
+			(end 3.175 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "99a5c0fe-1e4d-41d0-9723-c8f8a25ed2e0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(uuid "b34feb3c-14d1-4423-b926-e72660f18b44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -2.921 0 270)
+			(size 2.413 3.429)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.1036054704)
+			(net "Net-(D10-K-)")
+			(pinfunction "+_1")
+			(pintype "passive")
+			(uuid "783250a3-7e2b-4576-b486-9329e256f3a1")
+		)
+		(pad "2" smd roundrect
+			(at 2.921 0 270)
+			(size 2.413 3.429)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.1036054704)
+			(net "Net-(L2--)")
+			(pinfunction "-_2")
+			(pintype "passive")
+			(uuid "4a86a4c1-3b69-4617-b7c7-c198e5377280")
+		)
+		(embedded_fonts no)
+	)

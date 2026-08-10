@@ -1,58 +1,103 @@
 (kicad_symbol_lib
-	(version 20241209)
+	(version 20251024)
 	(generator "kicad_symbol_editor")
-	(generator_version "9.0")
-	(symbol "CN3763"
+	(generator_version "10.0")
+	(symbol "BMS_NMOS"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Q"
+			(at 2.54 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "BMS_NMOS"
+			(at 2.54 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-channel MOSFET for BMS back-to-back switch"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(symbol "CN3763_1_1"
+		(symbol "BMS_NMOS_0_1"
+			(polyline
+				(pts
+					(xy -3.81 5.08) (xy -1.27 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 -5.08) (xy -1.27 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(rectangle
-				(start -12.7 25.4)
-				(end 0 0)
+				(start -1.27 6.35)
+				(end 1.27 -6.35)
 				(stroke
 					(width 0)
 					(type solid)
@@ -61,64 +106,36 @@
 					(type background)
 				)
 			)
-			(pin bidirectional line
-				(at -15.24 20.32 0)
-				(length 2.54)
-				(name "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(polyline
+				(pts
+					(xy -0.635 4.445) (xy -0.635 -4.445)
 				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
-			(pin bidirectional line
-				(at -15.24 6.35 0)
-				(length 2.54)
-				(name "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy 3.81 0)
 				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
-			(pin bidirectional line
-				(at -15.24 2.54 0)
-				(length 2.54)
-				(name "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -10.16 27.94 270)
-				(length 2.54)
-				(name "1"
+		)
+		(symbol "BMS_NMOS_1_1"
+			(pin input line
+				(at -5.08 5.08 0)
+				(length 1.27)
+				(name "G"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -133,10 +150,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -7.62 -2.54 90)
-				(length 2.54)
-				(name "2"
+			(pin passive line
+				(at 5.08 0 180)
+				(length 1.27)
+				(name "D"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -151,89 +168,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -2.54 27.94 270)
-				(length 2.54)
-				(name "10"
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 1.27)
+				(name "S"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 2.54 20.32 180)
-				(length 2.54)
-				(name "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 2.54 16.51 180)
-				(length 2.54)
-				(name "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 2.54 11.43 180)
-				(length 2.54)
-				(name "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 2.54 5.08 180)
-				(length 2.54)
-				(name "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -244,12 +189,16 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "CN3795"
+	(symbol "CN3765"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D7"
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U7"
 			(at -5.4767 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -257,8 +206,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "CN3765"
 			(at -5.4767 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -268,32 +219,38 @@
 		)
 		(property "Footprint" "PCM_Package_SO_AKL:SSOP-10_3.9x4.9mm_P1.00mm"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://beriled.biz/data/files/CN3765.pdf"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4A multi-chemistry battery charger for Li-ion, LiFePO4 or LTO"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(symbol "CN3795_1_1"
+		(symbol "CN3765_1_1"
 			(rectangle
 				(start -12.7 25.4)
 				(end 0 0)
@@ -306,16 +263,34 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 20.32 0)
+				(at -10.16 27.94 270)
 				(length 2.54)
-				(name "9"
+				(name "VG"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -7.62 -2.54 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -326,7 +301,7 @@
 			(pin bidirectional line
 				(at -15.24 6.35 0)
 				(length 2.54)
-				(name "3"
+				(name "CHRG"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -344,7 +319,7 @@
 			(pin bidirectional line
 				(at -15.24 2.54 0)
 				(length 2.54)
-				(name "4"
+				(name "DONE"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -360,88 +335,16 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 27.94 270)
+				(at 2.54 5.08 180)
 				(length 2.54)
-				(name "1"
+				(name "COM"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -7.62 -2.54 90)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -2.54 27.94 270)
-				(length 2.54)
-				(name "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 2.54 20.32 180)
-				(length 2.54)
-				(name "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 2.54 16.51 180)
-				(length 2.54)
-				(name "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -452,7 +355,7 @@
 			(pin bidirectional line
 				(at 2.54 11.43 180)
 				(length 2.54)
-				(name "6"
+				(name "FB"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -468,16 +371,70 @@
 				)
 			)
 			(pin bidirectional line
-				(at 2.54 5.08 180)
+				(at 2.54 16.51 180)
 				(length 2.54)
-				(name "5"
+				(name "BAT"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 2.54 20.32 180)
+				(length 2.54)
+				(name "CSP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 20.32 0)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -2.54 27.94 270)
+				(length 2.54)
+				(name "DRV"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -492,47 +449,59 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D3"
+			(at -12.7 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "HT7333-A"
+			(at -12.7 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-89-3_Handsoldering"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "HT7333_1_1"
@@ -547,25 +516,7 @@
 					(type background)
 				)
 			)
-			(pin input line
-				(at -27.94 7.62 0)
-				(length 2.54)
-				(name "VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
+			(pin power_in line
 				(at -12.7 -2.54 90)
 				(length 2.54)
 				(name "GND"
@@ -583,10 +534,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 2.54 7.62 180)
+			(pin input line
+				(at -27.94 7.62 0)
 				(length 2.54)
-				(name "VOUT"
+				(name "VIN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -601,6 +552,24 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 2.54 7.62 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(embedded_fonts no)
 	)
@@ -608,8 +577,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "D"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -618,6 +591,8 @@
 		)
 		(property "Value" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -626,29 +601,35 @@
 		)
 		(property "Footprint" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "bms_0_1"
@@ -677,27 +658,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 7.62 270)
-				(length 2.54)
-				(name "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
 				(at -8.89 -2.54 90)
 				(length 2.54)
-				(name "1"
+				(name "OD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -713,27 +676,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 7.62 270)
-				(length 2.54)
-				(name "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
 				(at -5.08 -2.54 90)
 				(length 2.54)
-				(name "2"
+				(name "OC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -749,9 +694,27 @@
 				)
 			)
 			(pin bidirectional line
+				(at -1.27 -2.54 90)
+				(length 2.54)
+				(name "CS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
 				(at -1.27 7.62 270)
 				(length 2.54)
-				(name "4"
+				(name "VC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -767,16 +730,34 @@
 				)
 			)
 			(pin bidirectional line
-				(at -1.27 -2.54 90)
+				(at -5.08 7.62 270)
 				(length 2.54)
-				(name "3"
+				(name "VDD"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -8.89 7.62 270)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)

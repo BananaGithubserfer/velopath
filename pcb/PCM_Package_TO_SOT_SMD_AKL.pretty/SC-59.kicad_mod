@@ -1,0 +1,333 @@
+(footprint "SC-59"
+		(layer "B.Cu")
+		(uuid "e4e898d0-431d-4727-a2fb-b26c5a6b1f77")
+		(at 22.4 51.3 180)
+		(descr "SC-59, https://lib.chipdip.ru/images/import_diod/original/SOT-23_SC-59.jpg, Alternate KiCad Library")
+		(tags "SC-59")
+		(property "Reference" "Q6"
+			(at 0 2.622 0)
+			(layer "B.SilkS")
+			(uuid "0a07bd95-170a-4359-bcdf-5acecc0f17bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "2SJ168"
+			(at 0 -2.5 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "63637efa-ea73-46b9-9eef-db62b7ba16bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/3cd3c063e21ef00cd91b0a2e93d45306/2SJ168.pdf"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "76b89d35-5012-4e1f-be9f-506ef5c377e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "SC-59 P-MOSFET enchancement mode transistor, 60V, 200mA, 200mW, Alternate KiCAD Library"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c5526b5c-32ec-47aa-a613-d28f1e6199d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/036946dc-00eb-484a-83cd-0d43ce71e2a1")
+		(sheetname "/")
+		(sheetfile "velopath_final.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 2 1.9)
+			(end 2 -1.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "0d1217ca-dde4-4c1f-9c43-97dca51683c6")
+		)
+		(fp_line
+			(start 2 -1.9)
+			(end -2 -1.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f9f4a5a7-8b5f-4236-82c0-6da68da2b76f")
+		)
+		(fp_line
+			(start -2 1.9)
+			(end 2 1.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "0ce0581e-ae88-4d29-9976-2f126d6d7baa")
+		)
+		(fp_line
+			(start -2 -1.9)
+			(end -2 1.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "0113a9a6-f476-4c22-8d7a-1c1a47fe5ac6")
+		)
+		(fp_line
+			(start 1.9 -1.8)
+			(end 1.9 1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "4c911c37-8178-40d3-96b9-b446fbf36271")
+		)
+		(fp_line
+			(start 1.9 -1.8)
+			(end -1.9 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "6b76e7e2-28c7-4342-9eb1-60baeaa946b2")
+		)
+		(fp_line
+			(start -1.9 1.8)
+			(end 1.9 1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "db13bae0-fb3c-49b3-9f57-3c04523e2d4d")
+		)
+		(fp_line
+			(start -1.9 1.8)
+			(end -1.9 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "48586378-1293-4ef7-83f1-820ac6b949a3")
+		)
+		(fp_line
+			(start 1.45 0.3)
+			(end 0.85 0.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "db6f5f97-088e-4431-adbe-229975a742cf")
+		)
+		(fp_line
+			(start 1.45 -0.3)
+			(end 1.45 0.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "74add571-4a3f-4c92-b8e4-2d451371e1c8")
+		)
+		(fp_line
+			(start 1.45 -0.3)
+			(end 0.85 -0.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "a05f436d-e1ec-436c-a68a-28ac975d6a7d")
+		)
+		(fp_line
+			(start 0.85 1.52)
+			(end 0.85 -1.52)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "3fe5fdaa-59f4-49e8-abe9-f49e7a8bc493")
+		)
+		(fp_line
+			(start -0.85 1.55)
+			(end 0.85 1.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "c962587a-3333-4969-98fa-eab4e17f3811")
+		)
+		(fp_line
+			(start -0.85 -1.55)
+			(end 0.85 -1.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "94019b6d-c3a2-4ec4-81d8-9f2938a5bf74")
+		)
+		(fp_line
+			(start -0.85 -1.55)
+			(end -0.85 1.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "568fd3b6-624d-4afa-a10e-cf2c54f5a239")
+		)
+		(fp_line
+			(start -1.45 1.25)
+			(end -0.85 1.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "89e4e1de-5192-42d1-bbcf-e35e10c4f0a9")
+		)
+		(fp_line
+			(start -1.45 1.25)
+			(end -1.45 0.65)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "67bce971-7cc3-4024-be4b-5aab9cb99c7a")
+		)
+		(fp_line
+			(start -1.45 0.65)
+			(end -0.85 0.65)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "21907cd2-2764-4ee8-bf3a-00d8c3daf75b")
+		)
+		(fp_line
+			(start -1.45 -0.65)
+			(end -0.85 -0.65)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "47d73620-932e-4ca9-ac3c-9305bc320b98")
+		)
+		(fp_line
+			(start -1.45 -0.65)
+			(end -1.45 -1.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4b38cd6b-8444-407c-b93b-2e8b66d4c5a0")
+		)
+		(fp_line
+			(start -1.45 -1.25)
+			(end -0.85 -1.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "c31a650f-bebd-4417-9b68-75cbb8986322")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(uuid "b9cad7cf-6ec6-4cc7-ba1a-27bef63373d3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.2 0.95 180)
+			(size 0.9 0.8)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(Q6-G)")
+			(pinfunction "G_1")
+			(pintype "input")
+			(uuid "17454e27-f6b2-4b2a-b5e4-84502921fe91")
+		)
+		(pad "2" smd roundrect
+			(at -1.2 -0.95 180)
+			(size 0.9 0.8)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(C12-+)")
+			(pinfunction "S_2")
+			(pintype "passive")
+			(uuid "1816e2ff-376f-44d8-ab2b-6a339cfa1784")
+		)
+		(pad "3" smd roundrect
+			(at 1.2 0 180)
+			(size 0.9 0.8)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(D10-A+)")
+			(pinfunction "D_3")
+			(pintype "passive")
+			(uuid "d113bb2e-b680-403a-aaf5-2c8bfd8c1369")
+		)
+		(embedded_fonts no)
+		(model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SC-59.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)

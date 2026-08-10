@@ -1,0 +1,270 @@
+** Drc report for velopath_final.kicad_pcb **
+** Created on 2026-08-10T20:45:08 **
+** Report includes: Errors, Warnings **
+
+** Found 80 DRC violations **
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(29.6000 mm, 29.3375 mm): Конт. пл. 1 [SCL2] от  на B.Cu
+    @(29.5875 mm, 29.8500 mm): Конт. пл. 12 [GND] от  на B.Cu
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(29.6000 mm, 29.3375 mm): Конт. пл. 1 [SCL2] от  на B.Cu
+    @(30.1000 mm, 29.3375 mm): Конт. пл. 2 [GND] от  на B.Cu
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(30.6000 mm, 29.3375 mm): Конт. пл. 3 [GND] от  на B.Cu
+    @(31.1000 mm, 29.3375 mm): Конт. пл. 4 [Net-(C2-+)] от  на B.Cu
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(31.1000 mm, 29.3375 mm): Конт. пл. 4 [Net-(C2-+)] от  на B.Cu
+    @(31.1125 mm, 29.8500 mm): Конт. пл. 5 [+3.3V] от  на B.Cu
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(31.1125 mm, 30.3500 mm): Конт. пл. 6 [+3.3V] от  на B.Cu
+    @(31.1000 mm, 30.8625 mm): Конт. пл. 7 [unconnected-(U1-INT-Pad7)] от  на B.Cu
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(31.1000 mm, 30.8625 mm): Конт. пл. 7 [unconnected-(U1-INT-Pad7)] от  на B.Cu
+    @(30.6000 mm, 30.8625 mm): Конт. пл. 8 [unconnected-(U1-DRDY-Pad8)] от  на B.Cu
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(30.6000 mm, 30.8625 mm): Конт. пл. 8 [unconnected-(U1-DRDY-Pad8)] от  на B.Cu
+    @(30.1000 mm, 30.8625 mm): Конт. пл. 9 [Net-(JP1-B)] от  на B.Cu
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(30.1000 mm, 30.8625 mm): Конт. пл. 9 [Net-(JP1-B)] от  на B.Cu
+    @(29.6000 mm, 30.8625 mm): Конт. пл. 10 [+3.3V] от  на B.Cu
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(29.6000 mm, 30.8625 mm): Конт. пл. 10 [+3.3V] от  на B.Cu
+    @(29.5875 mm, 30.3500 mm): Конт. пл. 11 [SDA2] от  на B.Cu
+[clearance]: Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,1500 mm)
+    Rule: класс цепей 'Default'; error
+    @(29.5875 mm, 30.3500 mm): Конт. пл. 11 [SDA2] от  на B.Cu
+    @(29.5875 mm, 29.8500 mm): Конт. пл. 12 [GND] от  на B.Cu
+[lib_footprint_mismatch]: Посад. место 'PinSocket_1x03_P2.54mm_Vertical' не соответствует копии в библиотеке 'Connector_PinSocket_2.54mm'
+    Local override; warning
+    @(33.9100 mm, 68.6100 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402' не соответствует копии в библиотеке 'PCM_4ms_Resistor'
+    Local override; warning
+    @(24.0000 mm, 51.7000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'TO-252-2' не соответствует копии в библиотеке 'Package_TO_SOT_SMD'
+    Local override; warning
+    @(31.7275 mm, 50.8400 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место '1x01_P2.0mm' не соответствует копии в библиотеке 'PCM_SparkFun-Connector'
+    Local override; warning
+    @(21.5000 mm, 43.9500 mm): Посад. место J4
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'PCM_Capacitor_SMD_AKL'
+    Local override; warning
+    @(26.3500 mm, 54.3000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(32.4000 mm, 39.9000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место '1x01_P2.0mm' не соответствует копии в библиотеке 'PCM_SparkFun-Connector'
+    Local override; warning
+    @(21.5000 mm, 46.0000 mm): Посад. место J6
+[lib_footprint_mismatch]: Посад. место 'Socket_1x02_2.54mm_TH' не соответствует копии в библиотеке 'PCM_4ms_Connector'
+    Local override; warning
+    @(21.6150 mm, 67.2500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0603_1608Metric_Pad1.05x0.95mm_HandSolder' не соответствует копии в библиотеке 'PCM_Capacitor_SMD_AKL'
+    Local override; warning
+    @(24.0000 mm, 49.8000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'LED_0603_1608Metric' не соответствует копии в библиотеке 'PCM_LED_SMD_AKL'
+    Local override; warning
+    @(24.6000 mm, 59.4000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'TSOT-23-6' не соответствует копии в библиотеке 'PCM_Package_TO_SOT_SMD_AKL'
+    Local override; warning
+    @(25.8600 mm, 62.1300 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место '1x01_P2.0mm' не соответствует копии в библиотеке 'PCM_SparkFun-Connector'
+    Local override; warning
+    @(21.5000 mm, 41.9000 mm): Посад. место J3
+[lib_footprint_mismatch]: Посад. место '1x01_P2.0mm' не соответствует копии в библиотеке 'PCM_SparkFun-Connector'
+    Local override; warning
+    @(21.5000 mm, 39.8500 mm): Посад. место J7
+[lib_footprint_mismatch]: Посад. место 'Socket_1x02_2.54mm_TH' не соответствует копии в библиотеке 'PCM_4ms_Connector'
+    Local override; warning
+    @(25.3150 mm, 66.2300 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'TO-252-2' не соответствует копии в библиотеке 'Package_TO_SOT_SMD'
+    Local override; warning
+    @(31.6750 mm, 60.3350 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0603_1608Metric_Pad0.98x0.95mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(27.2500 mm, 58.1375 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402' не соответствует копии в библиотеке 'PCM_4ms_Resistor'
+    Local override; warning
+    @(23.7500 mm, 55.1000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402' не соответствует копии в библиотеке 'PCM_4ms_Resistor'
+    Local override; warning
+    @(20.7000 mm, 59.6000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402' не соответствует копии в библиотеке 'PCM_4ms_Resistor'
+    Local override; warning
+    @(23.2500 mm, 58.2000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'PinSocket_1x04_P2.00mm_Vertical' не соответствует копии в библиотеке 'Connector_PinSocket_2.00mm'
+    Local override; warning
+    @(28.5000 mm, 25.0000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0603_1608Metric_Pad1.05x0.95mm_HandSolder' не соответствует копии в библиотеке 'PCM_Capacitor_SMD_AKL'
+    Local override; warning
+    @(21.4500 mm, 49.0000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'SOT-89-3_Handsoldering' не соответствует копии в библиотеке 'PCM_Package_TO_SOT_SMD_AKL'
+    Local override; warning
+    @(25.6000 mm, 45.0000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402' не соответствует копии в библиотеке 'PCM_4ms_Resistor'
+    Local override; warning
+    @(20.7000 mm, 61.5500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(29.3000 mm, 41.2500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'LQFP-64_10x10mm_P0.5mm' не соответствует копии в библиотеке 'Package_QFP'
+    Local override; warning
+    @(27.7500 mm, 33.3750 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402' не соответствует копии в библиотеке 'PCM_4ms_Resistor'
+    Local override; warning
+    @(22.1500 mm, 59.4500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'PCM_Capacitor_SMD_AKL'
+    Local override; warning
+    @(26.0000 mm, 57.4500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402' не соответствует копии в библиотеке 'PCM_4ms_Capacitor'
+    Local override; warning
+    @(24.5000 mm, 53.2000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0603_1608Metric_Pad0.98x0.95mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(24.0000 mm, 63.5000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'Resonator_SMD_Murata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering' не соответствует копии в библиотеке 'Crystal'
+    Local override; warning
+    @(27.2500 mm, 34.0500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(34.3000 mm, 36.4000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0603_1608Metric_Pad1.08x0.95mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(28.5500 mm, 63.0000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(22.7000 mm, 31.9000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(26.0000 mm, 26.8000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'SOD-123' не соответствует копии в библиотеке 'PCM_SparkFun-Semiconductor-Standard'
+    Local override; warning
+    @(34.1500 mm, 49.2367 mm): Посад. место D11
+[lib_footprint_mismatch]: Посад. место 'SOD-123' не соответствует копии в библиотеке 'PCM_SparkFun-Semiconductor-Standard'
+    Local override; warning
+    @(22.6367 mm, 54.4500 mm): Посад. место D10
+[lib_footprint_mismatch]: Посад. место 'C_0603_1608Metric_Pad1.08x0.95mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(34.5000 mm, 65.2000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0603_1608Metric_Pad0.98x0.95mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(31.0000 mm, 64.5000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0603' не соответствует копии в библиотеке 'PCM_4ms_Capacitor'
+    Local override; warning
+    @(32.6000 mm, 64.5000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(24.7000 mm, 33.6000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(23.3500 mm, 27.8000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'LGA-12_2x2mm_P0.5mm' не соответствует копии в библиотеке 'Package_LGA'
+    Local override; warning
+    @(30.3500 mm, 30.1000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(31.0000 mm, 27.5000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(23.3000 mm, 26.8000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402' не соответствует копии в библиотеке 'PCM_4ms_Resistor'
+    Local override; warning
+    @(23.7500 mm, 61.5000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(27.7500 mm, 49.8000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402' не соответствует копии в библиотеке 'PCM_4ms_Capacitor'
+    Local override; warning
+    @(26.3000 mm, 51.8500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'SSOP-10_3.9x4.9mm_P1.00mm' не соответствует копии в библиотеке 'PCM_Package_SO_AKL'
+    Local override; warning
+    @(24.4000 mm, 58.3000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(30.2000 mm, 50.1500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(30.2500 mm, 32.4500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder' не соответствует копии в библиотеке 'LED_SMD'
+    Local override; warning
+    @(30.6000 mm, 51.4000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'L_Vishay_IHLP-2525' не соответствует копии в библиотеке 'PCM_Inductor_SMD_AKL'
+    Local override; warning
+    @(31.5500 mm, 56.5500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm' не соответствует копии в библиотеке 'Jumper'
+    Local override; warning
+    @(26.0000 mm, 30.0000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402' не соответствует копии в библиотеке 'PCM_4ms_Capacitor'
+    Local override; warning
+    @(26.1000 mm, 54.8500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'SW_SPST_PTS810' не соответствует копии в библиотеке 'Button_Switch_SMD'
+    Local override; warning
+    @(33.5500 mm, 33.0500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(27.8000 mm, 30.2000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(34.1000 mm, 28.6000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0603_1608Metric_Pad1.08x0.95mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(28.4000 mm, 65.0000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(22.2000 mm, 35.1500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder' не соответствует копии в библиотеке 'LED_SMD'
+    Local override; warning
+    @(22.3500 mm, 33.8000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'WH-BLE106' не соответствует копии в библиотеке '2026_314_projects'
+    Local override; warning
+    @(30.4500 mm, 42.7500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(28.3000 mm, 26.7500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0603_1608Metric_Pad1.05x0.95mm_HandSolder' не соответствует копии в библиотеке 'PCM_Capacitor_SMD_AKL'
+    Local override; warning
+    @(22.5300 mm, 69.5000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'SC-59' не соответствует копии в библиотеке 'PCM_Package_TO_SOT_SMD_AKL'
+    Local override; warning
+    @(22.4000 mm, 51.3000 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'C_0402_1005Metric_Pad0.74x0.62mm_HandSolder' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(27.8000 mm, 50.8500 mm): Посад. место <без обозначения>
+[lib_footprint_mismatch]: Посад. место 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(28.6000 mm, 27.8000 mm): Посад. место <без обозначения>
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(23.9524 mm, 26.4250 mm): Дорожка [GND] на B.Cu, длина 0.4339 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(29.6025 mm, 49.8000 mm): Дорожка [GND] на B.Cu, длина 0.2121 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(23.7500 mm, 61.2200 mm): Дорожка [Net-(C23--)] на F.Cu, длина 0.0200 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(23.3510 mm, 32.2500 mm): Дорожка [Net-(R11--)] на F.Cu, длина 0.0014 mm
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - PTH inside courtyard
+    - NPTH inside courtyard
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

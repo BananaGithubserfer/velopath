@@ -1,0 +1,220 @@
+(footprint "R_0402"
+		(layer "F.Cu")
+		(uuid "05f2a713-a363-4299-b1c8-60452998d348")
+		(at 24 51.7 180)
+		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "resistor")
+		(property "Reference" "R14"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "27555102-a9bc-47a4-bd12-160be4bb7ee8")
+			(effects
+				(font
+					(size 0.75 0.75)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "02c1f155-c1a2-4a20-b33e-cf566868ccec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1488121c-594a-4dc5-a4a1-f98d5a3a6a6b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "resistor (IEC)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ba358fe-d139-4157-af50-94c1be4507af")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Indicator" "+"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff77d340-063c-4f6b-96e3-84484315f127")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/8666cfc2-691f-43c6-9388-9808ee7053c3")
+		(sheetname "/")
+		(sheetfile "velopath_final.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 0.9144 0.4445)
+			(end -0.9144 0.4445)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6ee6e5b3-b278-462f-9583-666f02b787b3")
+		)
+		(fp_line
+			(start 0.9144 -0.4445)
+			(end 0.9144 0.4445)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7f146008-5b66-43cd-8bb5-fbc98e9c527e")
+		)
+		(fp_line
+			(start -0.9144 -0.4445)
+			(end 0.9144 -0.4445)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e5fd14fc-2b60-4e2b-a673-93836366cc1a")
+		)
+		(fp_line
+			(start -0.9144 -0.4445)
+			(end -0.9144 0.4445)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dd40eacf-682f-4bd9-89b2-31c6c91f86a8")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "228b6faf-9ea1-4df3-9276-1ea4bda8c013")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "12ae4085-b187-453f-abb4-c26944142e8f")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "64baeb17-5749-4999-ae23-3ad2329c2634")
+		)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "54ae7c28-d2e8-48a6-86cd-26835006d534")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "03268a26-1c3b-42eb-8a8c-3b54e0c0c672")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1da85bd7-ec49-4bf9-a5f5-1ae7ad73d7c0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0.6985 -0.8255 0)
+			(layer "F.Fab")
+			(uuid "375f7a07-81fb-48b8-b520-b59b40a62057")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0 180)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(C14--)")
+			(pinfunction "+_1")
+			(pintype "passive")
+			(uuid "a783938d-11fa-42ea-8e81-09754c78a400")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0 180)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(R14--)")
+			(pinfunction "-_2")
+			(pintype "passive")
+			(uuid "a840c996-5246-4008-a9ee-3031c5055366")
+		)
+		(embedded_fonts no)
+		(model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
