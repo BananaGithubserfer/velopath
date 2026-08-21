@@ -1,0 +1,25 @@
+Drill report for velopath_rezonit_2026_08_21.kicad_pcb
+Created on 2026-08-21T18:04:01
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'velopath_rezonit_2026_08_21-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (54 holes))
+    T2  0.700mm  0.0276"  (4 holes))
+    T3  0.800mm  0.0315"  (4 holes))
+    T4  1.000mm  0.0394"  (7 holes))
+
+    Total plated holes count 69
+
+
+Drill file 'velopath_rezonit_2026_08_21-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

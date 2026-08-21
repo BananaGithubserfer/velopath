@@ -1,0 +1,817 @@
+** Drc report for velopath_rezonit_2026_08_21.kicad_pcb **
+** Created on 2026-08-21T18:04:39 **
+** Report includes: Errors, Warnings **
+
+** Found 199 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.0725 mm, 45.0300 mm): Сегмент от Q3 на F.Silkscreen
+    @(29.4475 mm, 45.8000 mm): Конт. пл. 3 [GND] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.8225 mm, 45.0300 mm): Сегмент от Q3 на F.Silkscreen
+    @(29.4475 mm, 45.8000 mm): Конт. пл. 3 [GND] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.8225 mm, 47.7300 mm): Сегмент от Q3 на F.Silkscreen
+    @(29.4475 mm, 45.8000 mm): Конт. пл. 3 [GND] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.6325 mm, 45.0300 mm): Сегмент от Q3 на F.Silkscreen
+    @(34.0075 mm, 45.8000 mm): Конт. пл. 1 [Net-(Q3-G)] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.3825 mm, 45.0300 mm): Сегмент от Q3 на F.Silkscreen
+    @(34.0075 mm, 45.8000 mm): Конт. пл. 1 [Net-(Q3-G)] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.3825 mm, 48.1350 mm): Сегмент от Q3 на F.Silkscreen
+    @(34.0075 mm, 45.8000 mm): Конт. пл. 1 [Net-(Q3-G)] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.5000 mm, 51.9500 mm): Сегмент от R14 на F.Silkscreen
+    @(23.5150 mm, 51.7000 mm): Конт. пл. 2 [Net-(R14--)] от R14 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.5000 mm, 51.4500 mm): Сегмент от R14 на F.Silkscreen
+    @(24.4850 mm, 51.7000 mm): Конт. пл. 1 [Net-(C14--)] от R14 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.8000 mm, 49.4000 mm): Сегмент от C12 на F.Silkscreen
+    @(24.8750 mm, 49.8000 mm): Конт. пл. 2 [GND] от C12 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.8000 mm, 50.2000 mm): Сегмент от C12 на F.Silkscreen
+    @(23.1250 mm, 49.8000 mm): Конт. пл. 1 [Net-(C12-+)] от C12 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.8000 mm, 50.2000 mm): Сегмент от C12 на F.Silkscreen
+    @(24.8750 mm, 49.8000 mm): Конт. пл. 2 [GND] от C12 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.2000 mm, 49.4000 mm): Сегмент от C12 на F.Silkscreen
+    @(23.1250 mm, 49.8000 mm): Конт. пл. 1 [Net-(C12-+)] от C12 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.2000 mm, 49.4000 mm): Сегмент от C12 на F.Silkscreen
+    @(24.8750 mm, 49.8000 mm): Конт. пл. 2 [GND] от C12 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.2000 mm, 50.2000 mm): Сегмент от C12 на F.Silkscreen
+    @(23.1250 mm, 49.8000 mm): Конт. пл. 1 [Net-(C12-+)] от C12 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.0500 mm, 48.2000 mm): Сегмент от C17 на F.Silkscreen
+    @(21.4500 mm, 48.1250 mm): Конт. пл. 2 [GND] от C17 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.0500 mm, 49.8000 mm): Сегмент от C17 на F.Silkscreen
+    @(21.4500 mm, 49.8750 mm): Конт. пл. 1 [Net-(C12-+)] от C17 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.0500 mm, 49.8000 mm): Сегмент от C17 на F.Silkscreen
+    @(21.4500 mm, 48.1250 mm): Конт. пл. 2 [GND] от C17 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.8500 mm, 48.2000 mm): Сегмент от C17 на F.Silkscreen
+    @(21.4500 mm, 49.8750 mm): Конт. пл. 1 [Net-(C12-+)] от C17 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.8500 mm, 48.2000 mm): Сегмент от C17 на F.Silkscreen
+    @(21.4500 mm, 48.1250 mm): Конт. пл. 2 [GND] от C17 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.8500 mm, 49.8000 mm): Сегмент от C17 на F.Silkscreen
+    @(21.4500 mm, 49.8750 mm): Конт. пл. 1 [Net-(C12-+)] от C17 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.4275 mm, 53.9500 mm): Сегмент от Q3 на F.Silkscreen
+    @(31.7275 mm, 52.1000 mm): Конт. пл. 2 [Net-(Q2-D)] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.4275 mm, 54.9500 mm): Сегмент от Q3 на F.Silkscreen
+    @(31.7275 mm, 52.1000 mm): Конт. пл. 2 [Net-(Q2-D)] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.9775 mm, 53.9500 mm): Сегмент от Q3 на F.Silkscreen
+    @(31.7275 mm, 52.1000 mm): Конт. пл. 2 [Net-(Q2-D)] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.4250 mm, 57.2250 mm): Сегмент от Q2 на F.Silkscreen
+    @(31.6750 mm, 59.0750 mm): Конт. пл. 2 [Net-(Q2-D)] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.9750 mm, 56.2250 mm): Сегмент от Q2 на F.Silkscreen
+    @(31.6750 mm, 59.0750 mm): Конт. пл. 2 [Net-(Q2-D)] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.3750 mm, 56.2250 mm): Сегмент от Q2 на F.Silkscreen
+    @(31.6750 mm, 59.0750 mm): Конт. пл. 2 [Net-(Q2-D)] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.5000 mm, 54.6000 mm): Сегмент от  на F.Silkscreen
+    @(23.7500 mm, 54.6150 mm): Конт. пл. 2 [Net-(C12-+)] от  на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.0000 mm, 55.6000 mm): Сегмент от  на F.Silkscreen
+    @(23.7500 mm, 55.5850 mm): Конт. пл. 1 [Net-(R17--)] от  на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.2500 mm, 52.7000 mm): Сегмент от C14 на F.Silkscreen
+    @(24.5000 mm, 52.7150 mm): Конт. пл. 2 [Net-(C14--)] от C14 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.2500 mm, 53.7000 mm): Сегмент от C14 на F.Silkscreen
+    @(24.5000 mm, 52.7150 mm): Конт. пл. 2 [Net-(C14--)] от C14 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.2500 mm, 53.7000 mm): Сегмент от C14 на F.Silkscreen
+    @(24.5000 mm, 53.6850 mm): Конт. пл. 1 [GND] от C14 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.7500 mm, 52.7000 mm): Сегмент от C14 на F.Silkscreen
+    @(24.5000 mm, 52.7150 mm): Конт. пл. 2 [Net-(C14--)] от C14 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.7500 mm, 52.7000 mm): Сегмент от C14 на F.Silkscreen
+    @(24.5000 mm, 53.6850 mm): Конт. пл. 1 [GND] от C14 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.7500 mm, 53.7000 mm): Сегмент от C14 на F.Silkscreen
+    @(24.5000 mm, 53.6850 mm): Конт. пл. 1 [GND] от C14 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.3600 mm, 61.8800 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 62.1300 mm): Конт. пл. 5 [Net-(C24--)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.3600 mm, 62.3800 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 62.1300 mm): Конт. пл. 5 [Net-(C24--)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.3600 mm, 62.8300 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 63.0800 mm): Конт. пл. 6 [B-] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.3600 mm, 63.3300 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 63.0800 mm): Конт. пл. 6 [B-] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.9600 mm, 62.8300 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 63.0800 mm): Конт. пл. 6 [B-] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.7600 mm, 61.4300 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 61.1800 mm): Конт. пл. 3 [Net-(C25-+)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.3600 mm, 60.9300 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 61.1800 mm): Конт. пл. 3 [Net-(C25-+)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.3600 mm, 61.4300 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 61.1800 mm): Конт. пл. 3 [Net-(C25-+)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.3600 mm, 61.8800 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 62.1300 mm): Конт. пл. 2 [Net-(Q3-G)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.0200 mm, 63.0400 mm): Сегмент от Q2 на F.Silkscreen
+    @(29.3950 mm, 65.3750 mm): Конт. пл. 1 [Net-(Q2-G)] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.7700 mm, 66.1450 mm): Сегмент от Q2 на F.Silkscreen
+    @(29.3950 mm, 65.3750 mm): Конт. пл. 1 [Net-(Q2-G)] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.0200 mm, 66.1450 mm): Сегмент от Q2 на F.Silkscreen
+    @(29.3950 mm, 65.3750 mm): Конт. пл. 1 [Net-(Q2-G)] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.5800 mm, 63.4450 mm): Сегмент от Q2 на F.Silkscreen
+    @(33.9550 mm, 65.3750 mm): Конт. пл. 3 [B-] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.5800 mm, 66.1450 mm): Сегмент от Q2 на F.Silkscreen
+    @(33.9550 mm, 65.3750 mm): Конт. пл. 3 [B-] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.3300 mm, 66.1450 mm): Сегмент от Q2 на F.Silkscreen
+    @(33.9550 mm, 65.3750 mm): Конт. пл. 3 [B-] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(20.4500 mm, 59.1000 mm): Сегмент от R13 на F.Silkscreen
+    @(20.7000 mm, 59.1150 mm): Конт. пл. 1 [B+] от R13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(20.9500 mm, 60.1000 mm): Сегмент от R13 на F.Silkscreen
+    @(20.7000 mm, 60.0850 mm): Конт. пл. 2 [Net-(R13--)] от R13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 58.4500 mm): Сегмент от R12 на F.Silkscreen
+    @(22.7650 mm, 58.2000 mm): Конт. пл. 1 [Net-(L2--)] от R12 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(20.4500 mm, 61.0500 mm): Сегмент от R15 на F.Silkscreen
+    @(20.7000 mm, 61.0650 mm): Конт. пл. 1 [Net-(R13--)] от R15 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(20.9500 mm, 62.0500 mm): Сегмент от R15 на F.Silkscreen
+    @(20.7000 mm, 62.0350 mm): Конт. пл. 2 [GND] от R15 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.0165 mm, 60.9080 mm): Сегмент от R16 на F.Silkscreen
+    @(21.8075 mm, 60.7700 mm): Конт. пл. 2 [Net-(C12-+)] от R16 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.0835 mm, 59.7920 mm): Сегмент от R16 на F.Silkscreen
+    @(22.2925 mm, 59.9300 mm): Конт. пл. 1 [Net-(D13-A)] от R16 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.0275 mm, 54.9500 mm): Сегмент от Q3 на F.Silkscreen
+    @(31.7275 mm, 52.1000 mm): Конт. пл. 2 [Net-(Q2-D)] от Q3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.1000 mm, 53.8000 mm): Сегмент от C19 на F.Silkscreen
+    @(26.3500 mm, 53.7325 mm): Конт. пл. 1 [+3.3V] от C19 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.1000 mm, 54.8000 mm): Сегмент от C19 на F.Silkscreen
+    @(26.3500 mm, 53.7325 mm): Конт. пл. 1 [+3.3V] от C19 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.1000 mm, 54.8000 mm): Сегмент от C19 на F.Silkscreen
+    @(26.3500 mm, 54.8675 mm): Конт. пл. 2 [GND] от C19 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.6000 mm, 53.8000 mm): Сегмент от C19 на F.Silkscreen
+    @(26.3500 mm, 53.7325 mm): Конт. пл. 1 [+3.3V] от C19 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.6000 mm, 53.8000 mm): Сегмент от C19 на F.Silkscreen
+    @(26.3500 mm, 54.8675 mm): Конт. пл. 2 [GND] от C19 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.6000 mm, 54.8000 mm): Сегмент от C19 на F.Silkscreen
+    @(26.3500 mm, 54.8675 mm): Конт. пл. 2 [GND] от C19 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.6000 mm, 59.0000 mm): Сегмент от D13 на F.Silkscreen
+    @(23.6125 mm, 59.4000 mm): Конт. пл. 2 [Net-(D13-A)] от D13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.6000 mm, 59.8000 mm): Сегмент от D13 на F.Silkscreen
+    @(25.1875 mm, 59.4000 mm): Конт. пл. 1 [Net-(D13-K)] от D13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.6000 mm, 59.8000 mm): Сегмент от D13 на F.Silkscreen
+    @(23.6125 mm, 59.4000 mm): Конт. пл. 2 [Net-(D13-A)] от D13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.0000 mm, 59.4000 mm): Сегмент от D13 на F.Silkscreen
+    @(25.1875 mm, 59.4000 mm): Конт. пл. 1 [Net-(D13-K)] от D13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.0000 mm, 59.4000 mm): Сегмент от D13 на F.Silkscreen
+    @(23.6125 mm, 59.4000 mm): Конт. пл. 2 [Net-(D13-A)] от D13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.2000 mm, 59.0000 mm): Сегмент от D13 на F.Silkscreen
+    @(25.1875 mm, 59.4000 mm): Конт. пл. 1 [Net-(D13-K)] от D13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.2000 mm, 59.0000 mm): Сегмент от D13 на F.Silkscreen
+    @(23.6125 mm, 59.4000 mm): Конт. пл. 2 [Net-(D13-A)] от D13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.7500 mm, 57.9500 mm): Сегмент от R12 на F.Silkscreen
+    @(23.7350 mm, 58.2000 mm): Конт. пл. 2 [B+] от R12 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.2000 mm, 59.8000 mm): Сегмент от D13 на F.Silkscreen
+    @(25.1875 mm, 59.4000 mm): Конт. пл. 1 [Net-(D13-K)] от D13 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.3600 mm, 60.9300 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 61.1800 mm): Конт. пл. 4 [Net-(C23--)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.3600 mm, 61.4300 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 61.1800 mm): Конт. пл. 4 [Net-(C23--)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.9600 mm, 60.9300 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 61.1800 mm): Конт. пл. 4 [Net-(C23--)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.9600 mm, 61.8800 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 62.1300 mm): Конт. пл. 5 [Net-(C24--)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.9800 mm, 63.5800 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 61.1800 mm): Конт. пл. 4 [Net-(C23--)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.9800 mm, 63.5800 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 62.1300 mm): Конт. пл. 5 [Net-(C24--)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.9800 mm, 63.5800 mm): Сегмент от Q1 на F.Silkscreen
+    @(24.5500 mm, 63.0800 mm): Конт. пл. 6 [B-] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.7400 mm, 63.5800 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 63.0800 mm): Конт. пл. 1 [Net-(Q2-G)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.7400 mm, 63.5800 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 62.1300 mm): Конт. пл. 2 [Net-(Q3-G)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.7400 mm, 63.5800 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 61.1800 mm): Конт. пл. 3 [Net-(C25-+)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.7600 mm, 62.3800 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 62.1300 mm): Конт. пл. 2 [Net-(Q3-G)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.7600 mm, 63.3300 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 63.0800 mm): Конт. пл. 1 [Net-(Q2-G)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.3600 mm, 62.3800 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 62.1300 mm): Конт. пл. 2 [Net-(Q3-G)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.3600 mm, 62.8300 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 63.0800 mm): Конт. пл. 1 [Net-(Q2-G)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.3600 mm, 63.3300 mm): Сегмент от Q1 на F.Silkscreen
+    @(27.1700 mm, 63.0800 mm): Конт. пл. 1 [Net-(Q2-G)] от Q1 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.8375 mm, 57.3375 mm): Сегмент от R10 на F.Silkscreen
+    @(27.2500 mm, 57.2250 mm): Конт. пл. 1 [B+] от R10 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.8375 mm, 58.9375 mm): Сегмент от R10 на F.Silkscreen
+    @(27.2500 mm, 57.2250 mm): Конт. пл. 1 [B+] от R10 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.8375 mm, 58.9375 mm): Сегмент от R10 на F.Silkscreen
+    @(27.2500 mm, 59.0500 mm): Конт. пл. 2 [Net-(C24--)] от R10 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.6625 mm, 57.3375 mm): Сегмент от R10 на F.Silkscreen
+    @(27.2500 mm, 57.2250 mm): Конт. пл. 1 [B+] от R10 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.6625 mm, 57.3375 mm): Сегмент от R10 на F.Silkscreen
+    @(27.2500 mm, 59.0500 mm): Конт. пл. 2 [Net-(C24--)] от R10 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.6625 mm, 58.9375 mm): Сегмент от R10 на F.Silkscreen
+    @(27.2500 mm, 59.0500 mm): Конт. пл. 2 [Net-(C24--)] от R10 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.9750 mm, 57.2250 mm): Сегмент от Q2 на F.Silkscreen
+    @(31.6750 mm, 59.0750 mm): Конт. пл. 2 [Net-(Q2-D)] от Q2 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.7500 mm, 56.9500 mm): Сегмент от C18 на F.Silkscreen
+    @(26.0000 mm, 56.8825 mm): Конт. пл. 1 [B+] от C18 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.7500 mm, 57.9500 mm): Сегмент от C18 на F.Silkscreen
+    @(26.0000 mm, 56.8825 mm): Конт. пл. 1 [B+] от C18 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.7500 mm, 57.9500 mm): Сегмент от C18 на F.Silkscreen
+    @(26.0000 mm, 58.0175 mm): Конт. пл. 2 [GND] от C18 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.2500 mm, 56.9500 mm): Сегмент от C18 на F.Silkscreen
+    @(26.0000 mm, 56.8825 mm): Конт. пл. 1 [B+] от C18 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.2500 mm, 56.9500 mm): Сегмент от C18 на F.Silkscreen
+    @(26.0000 mm, 58.0175 mm): Конт. пл. 2 [GND] от C18 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.2500 mm, 57.9500 mm): Сегмент от C18 на F.Silkscreen
+    @(26.0000 mm, 58.0175 mm): Конт. пл. 2 [GND] от C18 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.6700 mm, 39.3750 mm): Прямоугольник от R17 на F.Silkscreen
+    @(32.4000 mm, 39.3025 mm): Конт. пл. 1 [chrg_done] от R17 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.6700 mm, 39.3750 mm): Прямоугольник от R17 на F.Silkscreen
+    @(32.4000 mm, 40.4975 mm): Конт. пл. 2 [+3.3V] от R17 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.0500 mm, 40.7500 mm): Сегмент от C9 на F.Silkscreen
+    @(29.3000 mm, 40.6825 mm): Конт. пл. 2 [GND] от C9 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.0500 mm, 41.7500 mm): Сегмент от C9 на F.Silkscreen
+    @(29.3000 mm, 41.8175 mm): Конт. пл. 1 [+3.3V] от C9 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.0500 mm, 41.7500 mm): Сегмент от C9 на F.Silkscreen
+    @(29.3000 mm, 40.6825 mm): Конт. пл. 2 [GND] от C9 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.5500 mm, 40.7500 mm): Сегмент от C9 на F.Silkscreen
+    @(29.3000 mm, 41.8175 mm): Конт. пл. 1 [+3.3V] от C9 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.5500 mm, 40.7500 mm): Сегмент от C9 на F.Silkscreen
+    @(29.3000 mm, 40.6825 mm): Конт. пл. 2 [GND] от C9 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.5500 mm, 41.7500 mm): Сегмент от C9 на F.Silkscreen
+    @(29.3000 mm, 41.8175 mm): Конт. пл. 1 [+3.3V] от C9 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.2460 mm, 44.2040 mm): Полигон от J4 на F.Silkscreen
+    @(21.5000 mm, 43.9500 mm): PTH конт. пл. 1 [GND] у J4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.2460 mm, 46.2540 mm): Полигон от J6 на F.Silkscreen
+    @(21.5000 mm, 46.0000 mm): PTH конт. пл. 1 [Vibro_L] у J6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.2460 mm, 42.1540 mm): Полигон от J3 на F.Silkscreen
+    @(21.5000 mm, 41.9000 mm): PTH конт. пл. 1 [Vibro_R] у J3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.2460 mm, 40.1040 mm): Полигон от J7 на F.Silkscreen
+    @(21.5000 mm, 39.8500 mm): PTH конт. пл. 1 [GND] у J7
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(23.3500 mm, 44.0500 mm): Сегмент от D3 на F.Silkscreen
+    @(25.6000 mm, 42.9375 mm): Конт. пл. 2 [B+] от D3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.8500 mm, 46.5500 mm): Сегмент от D3 на F.Silkscreen
+    @(25.6000 mm, 42.9375 mm): Конт. пл. 2 [B+] от D3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(28.0000 mm, 27.7000 mm): Конт. пл. 40 [unconnected-(U3-PC9-Pad40)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(27.5000 mm, 27.7000 mm): Конт. пл. 41 [unconnected-(U3-PA8-Pad41)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(31.5000 mm, 27.7000 mm): Конт. пл. 33 [unconnected-(U3-PB12-Pad33)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(31.0000 mm, 27.7000 mm): Конт. пл. 34 [unconnected-(U3-PB13-Pad34)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(30.5000 mm, 27.7000 mm): Конт. пл. 35 [unconnected-(U3-PB14-Pad35)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(30.0000 mm, 27.7000 mm): Конт. пл. 36 [unconnected-(U3-PB15-Pad36)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(29.5000 mm, 27.7000 mm): Конт. пл. 37 [unconnected-(U3-PC6-Pad37)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(26.5000 mm, 27.7000 mm): Конт. пл. 43 [unconnected-(U3-PA10-Pad43)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(26.0000 mm, 27.7000 mm): Конт. пл. 44 [unconnected-(U3-PA11-Pad44)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(25.5000 mm, 27.7000 mm): Конт. пл. 45 [unconnected-(U3-PA12-Pad45)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(25.0000 mm, 27.7000 mm): Конт. пл. 46 [SWDIO] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(29.0000 mm, 27.7000 mm): Конт. пл. 38 [unconnected-(U3-PC7-Pad38)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(28.5000 mm, 27.7000 mm): Конт. пл. 39 [unconnected-(U3-PC8-Pad39)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(27.0000 mm, 27.7000 mm): Конт. пл. 42 [unconnected-(U3-PA9-Pad42)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(24.5000 mm, 27.7000 mm): Конт. пл. 47 [GND] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(24.0000 mm, 27.7000 mm): Конт. пл. 48 [+3.3V] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 29.6250 mm): Конт. пл. 49 [SWDCLK] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 30.1250 mm): Конт. пл. 50 [unconnected-(U3-PA15-Pad50)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 30.6250 mm): Конт. пл. 51 [unconnected-(U3-PC10-Pad51)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 31.1250 mm): Конт. пл. 52 [unconnected-(U3-PC11-Pad52)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 31.6250 mm): Конт. пл. 53 [unconnected-(U3-PC12-Pad53)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 32.1250 mm): Конт. пл. 54 [unconnected-(U3-PD2-Pad54)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 32.6250 mm): Конт. пл. 55 [unconnected-(U3-PB3-Pad55)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 33.1250 mm): Конт. пл. 56 [unconnected-(U3-PB4-Pad56)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 33.6250 mm): Конт. пл. 57 [unconnected-(U3-PB5-Pad57)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 34.1250 mm): Конт. пл. 58 [unconnected-(U3-PB6-Pad58)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 34.6250 mm): Конт. пл. 59 [unconnected-(U3-PB7-Pad59)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 35.1250 mm): Конт. пл. 60 [Net-(R11--)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 35.6250 mm): Конт. пл. 61 [unconnected-(U3-PB8-Pad61)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 36.1250 mm): Конт. пл. 62 [unconnected-(U3-PB9-Pad62)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 36.6250 mm): Конт. пл. 63 [GND] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.7500 mm, 37.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(22.0750 mm, 37.1250 mm): Конт. пл. 64 [+3.3V] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 37.1250 mm): Конт. пл. 17 [BRX] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 36.6250 mm): Конт. пл. 18 [GND] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 36.1250 mm): Конт. пл. 19 [+3.3V] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 35.6250 mm): Конт. пл. 20 [nReset] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 35.1250 mm): Конт. пл. 21 [Link] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 34.6250 mm): Конт. пл. 22 [unconnected-(U3-PA6-Pad22)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 34.1250 mm): Конт. пл. 23 [unconnected-(U3-PA7-Pad23)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 33.6250 mm): Конт. пл. 24 [nWake] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 33.1250 mm): Конт. пл. 25 [nReload] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 32.6250 mm): Конт. пл. 26 [unconnected-(U3-PB0-Pad26)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 32.1250 mm): Конт. пл. 27 [unconnected-(U3-PB1-Pad27)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 31.6250 mm): Конт. пл. 28 [Net-(R7-+)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 31.1250 mm): Конт. пл. 29 [SCL2] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 30.6250 mm): Конт. пл. 30 [SDA2] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 30.1250 mm): Конт. пл. 31 [GND] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 28.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(33.4250 mm, 29.6250 mm): Конт. пл. 32 [+3.3V] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(25.5000 mm, 39.0500 mm): Конт. пл. 4 [unconnected-(U3-PC15-Pad4)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(26.0000 mm, 39.0500 mm): Конт. пл. 5 [OSCIN] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(26.5000 mm, 39.0500 mm): Конт. пл. 6 [OSCOUT] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(27.0000 mm, 39.0500 mm): Конт. пл. 7 [RESET] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(27.5000 mm, 39.0500 mm): Конт. пл. 8 [unconnected-(U3-PC0-Pad8)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(28.0000 mm, 39.0500 mm): Конт. пл. 9 [Vibro_R] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(28.5000 mm, 39.0500 mm): Конт. пл. 10 [Vibro_L] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(29.0000 mm, 39.0500 mm): Конт. пл. 11 [unconnected-(U3-PC3-Pad11)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(29.5000 mm, 39.0500 mm): Конт. пл. 12 [GND] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(30.0000 mm, 39.0500 mm): Конт. пл. 13 [+3.3V] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(30.5000 mm, 39.0500 mm): Конт. пл. 14 [chrg_done] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(31.0000 mm, 39.0500 mm): Конт. пл. 15 [unconnected-(U3-PA1-Pad15)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(24.0000 mm, 39.0500 mm): Конт. пл. 1 [+3.3V] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(24.5000 mm, 39.0500 mm): Конт. пл. 2 [PC13] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(25.0000 mm, 39.0500 mm): Конт. пл. 3 [unconnected-(U3-PC14-Pad3)] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.7500 mm, 38.3750 mm): Сегмент от U3 на F.Silkscreen
+    @(31.5000 mm, 39.0500 mm): Конт. пл. 16 [BTX] от U3 на F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.2500 mm, 50.6367 mm): Сегмент от D11 на B.Silkscreen
+    @(34.1500 mm, 50.8367 mm): Конт. пл. 1 [Net-(D10-K-)] от D11 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(35.0500 mm, 47.8367 mm): Сегмент от D11 на B.Silkscreen
+    @(34.1500 mm, 47.6367 mm): Конт. пл. 2 [GND] от D11 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.8000 mm, 51.6000 mm): Сегмент от C16 на B.Silkscreen
+    @(25.8150 mm, 51.8500 mm): Конт. пл. 1 [Net-(C12-+)] от C16 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.8000 mm, 52.1000 mm): Сегмент от C16 на B.Silkscreen
+    @(26.7850 mm, 51.8500 mm): Конт. пл. 2 [GND] от C16 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(25.8000 mm, 52.1000 mm): Сегмент от C16 на B.Silkscreen
+    @(25.8150 mm, 51.8500 mm): Конт. пл. 1 [Net-(C12-+)] от C16 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.8000 mm, 51.6000 mm): Сегмент от C16 на B.Silkscreen
+    @(26.7850 mm, 51.8500 mm): Конт. пл. 2 [GND] от C16 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.8000 mm, 51.6000 mm): Сегмент от C16 на B.Silkscreen
+    @(25.8150 mm, 51.8500 mm): Конт. пл. 1 [Net-(C12-+)] от C16 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.8000 mm, 52.1000 mm): Сегмент от C16 на B.Silkscreen
+    @(26.7850 mm, 51.8500 mm): Конт. пл. 2 [GND] от C16 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.2500 mm, 49.5500 mm): Сегмент от C8 на B.Silkscreen
+    @(27.1825 mm, 49.8000 mm): Конт. пл. 2 [GND] от C8 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.2500 mm, 50.0500 mm): Сегмент от C8 на B.Silkscreen
+    @(28.3175 mm, 49.8000 mm): Конт. пл. 1 [+3.3V] от C8 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.2500 mm, 50.0500 mm): Сегмент от C8 на B.Silkscreen
+    @(27.1825 mm, 49.8000 mm): Конт. пл. 2 [GND] от C8 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.2500 mm, 50.0500 mm): Сегмент от C8 на B.Silkscreen
+    @(28.3175 mm, 49.8000 mm): Конт. пл. 1 [+3.3V] от C8 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.6750 mm, 49.8800 mm): Сегмент от R1 на B.Silkscreen
+    @(29.6025 mm, 50.1500 mm): Конт. пл. 2 [GND] от R1 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.3000 mm, 50.6000 mm): Сегмент от C7 на B.Silkscreen
+    @(27.2325 mm, 50.8500 mm): Конт. пл. 2 [GND] от C7 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.3000 mm, 51.1000 mm): Сегмент от C7 на B.Silkscreen
+    @(28.3675 mm, 50.8500 mm): Конт. пл. 1 [+3.3V] от C7 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.3000 mm, 51.1000 mm): Сегмент от C7 на B.Silkscreen
+    @(27.2325 mm, 50.8500 mm): Конт. пл. 2 [GND] от C7 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.3000 mm, 50.6000 mm): Сегмент от C7 на B.Silkscreen
+    @(28.3675 mm, 50.8500 mm): Конт. пл. 1 [+3.3V] от C7 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.3000 mm, 50.6000 mm): Сегмент от C7 на B.Silkscreen
+    @(27.2325 mm, 50.8500 mm): Конт. пл. 2 [GND] от C7 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.3000 mm, 51.1000 mm): Сегмент от C7 на B.Silkscreen
+    @(28.3675 mm, 50.8500 mm): Конт. пл. 1 [+3.3V] от C7 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.6750 mm, 50.4200 mm): Сегмент от R1 на B.Silkscreen
+    @(30.7975 mm, 50.1500 mm): Конт. пл. 1 [Net-(D1-K-)] от R1 на B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.6750 mm, 50.4200 mm): Сегмент от R1 на B.Silkscreen
+    @(29.6025 mm, 50.1500 mm): Конт. пл. 2 [GND] от R1 на B.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - PTH inside courtyard
+    - NPTH inside courtyard
+    - Footprint component type doesn't match footprint pads
+    - Footprint doesn't match copy in library
+
+** End of Report **

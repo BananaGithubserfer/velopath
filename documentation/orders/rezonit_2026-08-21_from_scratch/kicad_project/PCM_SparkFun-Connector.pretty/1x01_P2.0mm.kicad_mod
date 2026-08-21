@@ -1,0 +1,106 @@
+(footprint "1x01_P2.0mm"
+		(layer "F.Cu")
+		(uuid "0f716fe3-e339-4df6-be84-377d11435ee1")
+		(at 21.5 43.95)
+		(tags "SparkFun")
+		(property "Reference" "J4"
+			(at 0 -0.889 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "07e090da-ad32-4b46-a748-a96f4026d2fb")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "gnd"
+			(at 0 1.651 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "17faea78-c5d3-4ec1-a103-48beff15aa56")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b83e1b6-a5b9-4654-ae25-2287a7774bb8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "307056f6-865e-4d0a-afd1-b73fe59ffa84")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/155610ab-6303-4d85-843d-636120461941")
+		(sheetname "/")
+		(sheetfile "velopath_rezonit_2026_08_21.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1 -1)
+			(end 1 1)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "0611d2a3-da1a-461d-adc1-2eb5375a813f")
+		)
+		(fp_poly
+			(pts
+				(xy -0.254 0.254) (xy 0.254 0.254) (xy 0.254 -0.254) (xy -0.254 -0.254)
+			)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill yes)
+			(layer "F.Fab")
+			(uuid "397b29f0-e18f-4bae-b327-b54379555674")
+		)
+		(pad "1" thru_hole circle
+			(at 0 0 90)
+			(size 1.2 1.2)
+			(drill 0.7)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "P-")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
+			(solder_mask_margin 0.1016)
+			(thermal_bridge_angle 0)
+			(uuid "4e7993e6-37a7-49f7-a6d4-d59c7e43c157")
+		)
+		(embedded_fonts no)
+	)

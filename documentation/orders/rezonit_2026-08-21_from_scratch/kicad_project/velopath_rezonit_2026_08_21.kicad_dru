@@ -1,0 +1,6 @@
+(version 1)
+
+(rule "U1 LIS3MDL internal pad clearance"
+	(constraint clearance (min 0.15mm))
+	(condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Net != B.Net && A.memberOfFootprint('U1') && B.memberOfFootprint('U1')")
+)

@@ -1,0 +1,316 @@
+(footprint "SOD-123"
+		(layer "B.Cu")
+		(uuid "27e2ed85-7489-4d0b-a5cd-a94bd618b81d")
+		(at 34.15 49.2367 90)
+		(descr "SOD-123 (Small Outline Diode)")
+		(tags "SparkFun SOD-123 Diode")
+		(property "Reference" "D11"
+			(at 0 1.5 90)
+			(layer "B.Fab")
+			(uuid "3bd9f96f-40b0-48ae-a65b-55cfb6f45414")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "~"
+			(at 0 -1.75 90)
+			(layer "B.Fab")
+			(uuid "317b2f5e-d0ca-4eab-a87b-13ac8ab03f10")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://www.chipdip.ru/product/cdbqr70-hf-diode-70-v-70ma-surface-mount-comchip-8006819768?q=%D0%94%D0%B8%D0%BE%D0%B4+%D0%A8%D0%BE%D1%82%D1%82%D0%BA%D0%B8+0402"
+			(at 0 -2.75 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "217f18e3-4bd6-440f-b855-9bf29f9bb6f2")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ce6b9580-9d9b-412d-80c1-38bbc14b435a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Sim.Pins" "2=1 1=2"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "784ac478-8889-45cb-95f7-68a7789c7c91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "be4537cb-248a-4352-8319-33582ac326ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Sim.Params" "type=\"\" model=\"D-Schottky\" lib=\"semiconductor.lib\""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "06a31f23-ea07-447c-b847-0e267db85989")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Rating" "V/A"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bb318046-36eb-4d86-8332-960a878c9ff6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/e4fc9fc4-f6f4-4210-a85e-9b7b988a2ae4")
+		(sheetname "/")
+		(sheetfile "velopath_rezonit_2026_08_21.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -2.5 0.75)
+			(end -2.5 -0.75)
+			(stroke
+				(width 0.2032)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a940e8b8-5899-481a-b0d3-ef46b39f0e13")
+		)
+		(fp_line
+			(start 2.35 -1.15)
+			(end -2.35 -1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "574df791-f895-4cf3-a120-8311f6ec2b9d")
+		)
+		(fp_line
+			(start 2.35 1.15)
+			(end 2.35 -1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "cb2981fe-72ca-43b1-a779-c5e00feb3d94")
+		)
+		(fp_line
+			(start -2.35 1.15)
+			(end -2.35 -1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "8354880e-3bbf-40a4-8817-a42508adfc93")
+		)
+		(fp_line
+			(start -2.35 1.15)
+			(end 2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b728c202-03af-4abe-9121-ed2eb3142622")
+		)
+		(fp_line
+			(start 1.4 -0.9)
+			(end -1.4 -0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4f0ab4a8-2211-4c9c-971a-413579904b03")
+		)
+		(fp_line
+			(start -1.4 -0.9)
+			(end -1.4 0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "a4959843-ce29-4fb9-acbd-e4d369aba541")
+		)
+		(fp_line
+			(start 0.25 -0.4)
+			(end -0.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "cfcf1618-d62f-4990-bdce-9d3888bce2f5")
+		)
+		(fp_line
+			(start 0.25 0)
+			(end 0.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "43e71e4c-eca4-4cdc-b3cf-c1125eceab69")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end -0.35 -0.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "b39b31a0-d6e7-428c-8ca2-3ea056e094cd")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end 0.25 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "fbad0e3c-e16b-41f0-b77c-8bdd7efb4678")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end -0.35 0.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "bd99bc11-a44e-4a85-a883-bec44f23441b")
+		)
+		(fp_line
+			(start -0.75 0)
+			(end -0.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "caa7200d-55c6-4c50-846a-0d2bc175c184")
+		)
+		(fp_line
+			(start 0.25 0.4)
+			(end 0.25 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "12631676-b956-47b8-9ea7-8e451c3f48df")
+		)
+		(fp_line
+			(start 1.4 0.9)
+			(end 1.4 -0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "cb43c621-f8a0-4f4d-9d55-dffc57e35df5")
+		)
+		(fp_line
+			(start -1.4 0.9)
+			(end 1.4 0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "da9c9c0b-f867-4bfb-bd28-b7512e10817a")
+		)
+		(pad "1" smd rect
+			(at -1.6 0 90)
+			(size 1.2 1.2)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "Net-(D10-K-)")
+			(pinfunction "K-_1")
+			(pintype "passive")
+			(uuid "c143930d-63b1-4060-b19a-af7a1f2c6fa9")
+		)
+		(pad "2" smd rect
+			(at 1.6 0 90)
+			(size 1.2 1.2)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "P-")
+			(pinfunction "A+_2")
+			(pintype "passive")
+			(uuid "b50952a6-dbb0-44b7-9b46-91db6d988bd9")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/Semiconductor-Standard.3dshapes/D_SOD-123.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)

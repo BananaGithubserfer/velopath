@@ -1,0 +1,258 @@
+(footprint "SOT-89-3_Handsoldering"
+		(layer "F.Cu")
+		(uuid "c4dbf14c-a238-40d1-aa81-580b387a13c7")
+		(at 25.6 45 -90)
+		(descr "SOT-89-3 Handsoldering, Alternate KiCad Library")
+		(tags "SOT-89-3 Handsoldering")
+		(property "Reference" "D3"
+			(at 0.3 -3.5 90)
+			(layer "F.SilkS")
+			(uuid "5378808a-fc5e-4dbf-8979-119ed610f2e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "HT7333-A"
+			(at 0.3 3.5 90)
+			(layer "F.Fab")
+			(uuid "d4356e91-5adf-46a8-85c5-6e5176809812")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a39e7910-f116-425c-ae72-4aa730bcd188")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eedb1bbf-c96a-4095-8736-d419c1ebcc35")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/807b01c4-fa15-443e-937a-dbb99ddaeb18")
+		(sheetname "/")
+		(sheetfile "velopath_rezonit_2026_08_21.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -3.556 2.4765)
+			(end 3.556 2.4765)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d94130bf-9535-42db-b274-493c4bb61f20")
+		)
+		(fp_line
+			(start 3.556 2.4765)
+			(end 3.556 -2.4765)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fcaebb5d-f7d5-4b61-9b26-04ddceb7df75")
+		)
+		(fp_line
+			(start -3.556 -2.4765)
+			(end -3.556 2.4765)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a760155b-ade5-4181-886a-3018aab7d743")
+		)
+		(fp_line
+			(start 3.556 -2.4765)
+			(end -3.556 -2.4765)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3d3227de-c663-40c4-978b-3eadf4372245")
+		)
+		(fp_line
+			(start -3.55 2.5)
+			(end 3.55 2.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2aba583a-e9ec-48c0-b130-05da4667ffb3")
+		)
+		(fp_line
+			(start -3.55 2.5)
+			(end -3.55 -2.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5d256fbc-b78f-4847-b8d8-ee025fb3dc84")
+		)
+		(fp_line
+			(start 3.55 -2.5)
+			(end 3.55 2.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "54888ea7-3132-47c3-8e89-aec1fb49b846")
+		)
+		(fp_line
+			(start 3.55 -2.5)
+			(end -3.55 -2.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e442573d-fc7a-44bd-974e-a8b2ff811efb")
+		)
+		(fp_line
+			(start -0.95 2.25)
+			(end -0.95 -1.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7b12bd75-d9ae-4179-a3c5-91294e07bf7a")
+		)
+		(fp_line
+			(start 1.55 2.25)
+			(end -0.95 2.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e4b5e2cd-fef4-4007-9700-7be8e2a8073e")
+		)
+		(fp_line
+			(start -0.95 -1.25)
+			(end 0.05 -2.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "611e6a0a-a6b4-45b8-adaf-b245a8162470")
+		)
+		(fp_line
+			(start 0.05 -2.25)
+			(end 1.55 -2.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "de042375-ad86-476c-919f-c3ea6bb49f44")
+		)
+		(fp_line
+			(start 1.55 -2.25)
+			(end 1.55 2.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "890473b6-3bcf-4a8b-a3c3-c6e1066a1aad")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0.5 0 0)
+			(layer "F.Fab")
+			(uuid "4c5c746a-08db-40e6-970a-112d14454fbf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -2.15 -1.5 270)
+			(size 2.3 0.9)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "P-")
+			(pinfunction "GND_1")
+			(pintype "bidirectional")
+			(uuid "7866a128-aad9-400f-8eb9-04723accd963")
+		)
+		(pad "2" smd custom
+			(at -2.0625 0 270)
+			(size 2.475 0.9)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "B+")
+			(pinfunction "VIN_2")
+			(pintype "input")
+			(zone_connect 2)
+			(options
+				(clearance outline)
+				(anchor rect)
+			)
+			(primitives
+				(gr_poly
+					(pts
+						(xy 5.3625 0.8665) (xy 1.2375 0.8665) (xy 1.2375 -0.8665) (xy 5.3625 -0.8665)
+					)
+					(width 0)
+					(fill yes)
+				)
+			)
+			(uuid "81b825c9-9ab6-428f-a795-2d8a4f8e8abd")
+		)
+		(pad "3" smd rect
+			(at -2.15 1.5 270)
+			(size 2.3 0.9)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "+3.3V")
+			(pinfunction "VOUT_3")
+			(pintype "output")
+			(uuid "17e5daac-1972-4468-ac02-034e18a0e5df")
+		)
+		(embedded_fonts no)
+		(model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-89-3.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
