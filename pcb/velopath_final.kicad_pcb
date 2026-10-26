@@ -9391,6 +9391,56 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
+			(start -1.25 1)
+			(end -1 1.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "4b754d20-a11a-4d22-a389-c4ddd9742619")
+		)
+		(fp_line
+			(start -1 1.25)
+			(end 1.25 1.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "928747d9-8cc4-4879-ac29-a98f5d4d5c2b")
+		)
+		(fp_line
+			(start 1.25 1.25)
+			(end 1.25 -1.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "2474aa2e-1b7c-41f1-976b-d1a8b396ce1a")
+		)
+		(fp_line
+			(start 1.25 -1.25)
+			(end -1.25 -1.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "0fc48d28-75bc-4c4e-a84c-9429a13cf955")
+		)
+		(fp_line
+			(start -1.25 -1.25)
+			(end -1.25 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ef7bca49-dd77-4f3c-a3a1-a6ba8dcdf6ec")
+		)
+		(fp_line
 			(start -1.25 1.25)
 			(end 1.25 1.25)
 			(stroke
