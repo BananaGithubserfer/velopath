@@ -1,5 +1,7 @@
 package com.example.velopath.feature.device
 
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.Arrangement
@@ -62,6 +64,12 @@ fun DeviceDiagnosticsScreen(onBack: () -> Unit) {
     val consoleLines by bleManager.consoleLines.collectAsStateWithLifecycle()
     val colorScheme = MaterialTheme.colorScheme
     val isDarkTheme = colorScheme.background.luminance() < 0.5f
+    val permissionLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestMultiplePermissions()
+    ) { _ ->
+        // Re-run the same preflight check after the system permission dialog closes.
+        bleManager.startScan()
+    }
 
     LaunchedEffect(connectionState) {
         if (connectionState is BleConnectionState.Connected) {
@@ -97,7 +105,9 @@ fun DeviceDiagnosticsScreen(onBack: () -> Unit) {
             item {
                 ConnectionCard(
                     connectionState = connectionState,
-                    onConnect = bleManager::startScan,
+                    onConnect = {
+                        permissionLauncher.launch(bleManager.requiredRuntimePermissions())
+                    },
                     onRefresh = bleManager::requestStatusSnapshot
                 )
             }
