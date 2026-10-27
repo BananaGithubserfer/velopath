@@ -1,74 +1,37 @@
-# Software stack documentation (non-ESP)
+# Software stack
 
-Last updated: 2026-04-12
+This document covers the Android application, STM32 firmware and desktop
+diagnostics. ESP-related code is isolated under [`firmware/esp`](../firmware/esp).
 
-Scope of this document:
-- Included: Android app, STM32 firmware, desktop/diagnostic tools.
-- Excluded: all ESP-related code/tools/artifacts.
+## Android application
 
-ESP is fully isolated in:
-`C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\esp`
+The Gradle project is [`app/velopath3_project`](../app/velopath3_project).
 
-## 1) Android application
+Typical commands from that directory:
 
-Path:
-`C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\app\velopath3_project`
+```powershell
+.\gradlew.bat :app:assembleDebug
+.\gradlew.bat :app:assembleRelease
+```
 
-Key modules and files:
-- `app` - main Android module.
-- `build.gradle.kts`, `settings.gradle.kts`, `gradle.properties`.
-- `gradlew`, `gradlew.bat`.
+Build output is generated under `app/velopath3_project/app/build` and is ignored.
 
-Typical build commands (PowerShell, run in project root):
-- `.\gradlew.bat :app:assembleDebug`
-- `.\gradlew.bat :app:assembleRelease`
+## STM32 firmware
 
-Release output location used in this structure:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\app\releases`
+The canonical STM32 project is [`app/velopath3_project/firmware`](../app/velopath3_project/firmware).
+It contains the CubeMX project, HAL sources, linker scripts and the diagnostic
+tools used for BLE and motor-control bench tests.
 
-## 2) STM32 firmware
+Important entry points:
 
-Primary STM32 tree:
-`C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\firmware`
+- `Core/Src/main.c` - board startup and main loop.
+- `Core/Src/ble_link.c` - BLE transport and optional provisioning.
+- `Core/Src/motor_control.c` - motor command handling.
+- `tools/` - host-side BLE and console utilities.
 
-Additional legacy STM32 tree:
-`C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\stm32_legacy_workspace`
+## Boundaries
 
-Typical STM32 files present:
-- `firmware.ioc` (CubeMX configuration)
-- `Core`, `Drivers`, `Startup`
-- linker scripts (`STM32F103RGTX_FLASH.ld`, `STM32F103RGTX_RAM.ld`)
-
-## 3) Desktop diagnostics and interactive tools
-
-Path:
-`C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\app\velopath3_project\firmware\tools`
-
-Includes:
-- BLE terminal/stream scripts (`ble_*.py`)
-- console utilities (`console_terminal.py`, command senders)
-- WinRT support scripts (`winrt_ble_*.ps1`)
-
-Purpose:
-- board diagnostics
-- terminal stability checks
-- command-level interaction tests
-
-## 4) Software architecture boundaries
-
-Non-ESP software folders:
-- `app\velopath3_project`
-- `firmware\firmware`
-- `firmware\stm32_legacy_workspace`
-- `documentation` (non-code docs and reports)
-
-ESP software folder:
-- `firmware\esp` (single containment area for ESP source + build artifacts + temp files)
-
-## 5) Notes for new contributors
-
-If you need to:
-- build mobile app: start from `app\velopath3_project`
-- work with STM32 firmware: start from `firmware\firmware`
-- run diagnostics from PC: use scripts in `app\velopath3_project\firmware\tools`
-- work with ESP only: use `firmware\esp` and do not mix ESP artifacts into other folders
+- The Android app communicates with the STM32 over the configured BLE module.
+- The STM32 firmware owns motor control, console commands and compass access.
+- ESP code is independent and must remain under `firmware/esp`.
+- Build output, logs, release artifacts and IDE workspaces are local-only.

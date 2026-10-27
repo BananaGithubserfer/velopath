@@ -368,7 +368,9 @@ void console_diag_print_prompt(void) {
 bool console_diag_try_handle(const char *line) {
     char command[BLE_LINE_BUFFER_SIZE];
     char *endptr = NULL;
+#if ESC_ENABLED
     long esc_percent = 0;
+#endif
     float heading_deg = 0.0f;
     lis3mdl_vector3_t raw = {0};
     uint8_t who_am_i = 0U;

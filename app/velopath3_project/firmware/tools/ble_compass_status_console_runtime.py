@@ -1,7 +1,9 @@
 ﻿import asyncio
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(r"C:\Users\vladimir.DESKTOP-L4RFPI0\AndroidStudioProjects\velopath3\firmware\tools")))
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 from ble_stable_terminal import open_session, probe_terminal, send_line, wait_for_prompt, prepare_windows_ble
 
 async def main():

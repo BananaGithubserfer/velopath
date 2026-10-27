@@ -27,16 +27,12 @@ At the application level, the current Android project includes:
 ```text
 velopath/
 |- app/
-|  |- velopath3_project/    Android app and related development materials
-|  `- releases/             APK copies and release outputs
+|  `- velopath3_project/    Android app and canonical STM32 firmware
 |- firmware/
-|  |- firmware/             Primary STM32 firmware tree
-|  |- stm32_legacy_workspace/
-|  `- esp/                  ESP code, tools, and isolated build area
+|  `- esp/                  ESP code and isolated tools
 |- pcb/                     KiCad projects and manufacturing outputs
 |- documentation/           Reports, engineering docs, mechanical docs
 |- advertising/             Brochures, presentations, visual assets
-|- _migration/              Migration and import logs
 |- INDEX.md                 Detailed project map
 `- START_HERE.md            Quick onboarding guide
 ```
@@ -64,7 +60,7 @@ The main navigation flow currently includes:
 
 ### STM32 Firmware
 
-Path: `firmware/firmware`
+Path: `app/velopath3_project/firmware`
 
 This area contains firmware for the handlebar module based on `STM32F103RGTx`. The documented hardware integration includes:
 
@@ -78,13 +74,13 @@ The firmware tree includes CubeMX project files, startup code, drivers, linker s
 
 Path: `firmware/esp`
 
-This directory is the isolated zone for ESP-related source code, tools, temporary files, and build artifacts. It includes quick-start and troubleshooting documents for the ESP subprojects.
+This directory is the isolated zone for ESP-related source code and tools. Build output and temporary files are local-only and ignored.
 
 ### PCB and Electronics
 
 Path: `pcb`
 
-This directory contains KiCad schematics, PCB layouts, backups, generated fabrication outputs, and related electronics assets.
+This directory contains KiCad schematics, PCB layouts, fabrication outputs, and related electronics assets.
 
 ### Documentation and Materials
 
@@ -92,9 +88,8 @@ Paths:
 
 - `documentation`
 - `advertising`
-- `_migration`
 
-These directories hold project reports, engineering notes, explanatory materials, brochures, visual assets, and migration history.
+These directories hold project reports, engineering notes, explanatory materials, brochures, and visual assets.
 
 ## Quick Start
 
@@ -124,15 +119,13 @@ The Android project expects local configuration through standard Gradle local fi
 
 ### 3. Work with STM32 Firmware
 
-Start in `firmware/firmware` if you are working on the main handlebar firmware. Typical files include:
+Start in `app/velopath3_project/firmware` if you are working on the main handlebar firmware. Typical files include:
 
 - `firmware.ioc`
 - `Core/`
 - `Drivers/`
 - `Startup/`
 - STM32 linker scripts
-
-There is also a legacy STM32 workspace in `firmware/stm32_legacy_workspace`.
 
 ### 4. Work with ESP Firmware
 
@@ -150,12 +143,12 @@ python -m platformio run -t upload --upload-port COM5
 - `INDEX.md` - high-level project map
 - `documentation/software_stack_non_esp.md` - software overview outside the ESP area
 - `documentation/materials_origin_and_import_map.md` - repository placement and source mapping
-- `app/velopath3_project/firmware/README.md` - handlebar firmware overview
+- `documentation/software_stack_non_esp.md` - software overview and build boundaries
 
 ## Suggested Entry Points By Task
 
 - Mobile app work: `app/velopath3_project`
-- Main embedded firmware: `firmware/firmware`
+- Main embedded firmware: `app/velopath3_project/firmware`
 - ESP work: `firmware/esp`
 - PCB and hardware files: `pcb`
 - Reports and engineering docs: `documentation`
@@ -163,7 +156,7 @@ python -m platformio run -t upload --upload-port COM5
 
 ## Status
 
-This repository is a working engineering workspace that combines product software, hardware, embedded development, design artifacts, and supporting documentation. Some directories contain active project files, while others preserve historical, diagnostic, or manufacturing context for the broader VeloPath system.
+This repository contains the active product sources, hardware files, engineering documentation, and supporting production materials. Generated workspaces, logs, caches, backups, and local credentials are intentionally excluded.
 
 ## License
 

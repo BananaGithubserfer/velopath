@@ -1,80 +1,31 @@
-# VeloPath - project index
+# VeloPath project index
 
-Last updated: 2026-08-10
+This repository contains the Android application, STM32 firmware, PCB design files,
+engineering documentation and production materials.
 
-Project root:
-`C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath`
+## Source trees
 
-## 1) Main folders
+- Android application: [`app/velopath3_project`](app/velopath3_project)
+- STM32 firmware and diagnostics: [`app/velopath3_project/firmware`](app/velopath3_project/firmware)
+- ESP firmware: [`firmware/esp`](firmware/esp)
+- PCB source and manufacturing files: [`pcb`](pcb)
+- Android/firmware build instructions: [`app/velopath3_project/README.md`](app/velopath3_project/README.md)
 
-- `app` - Android application, Gradle project, APK outputs.
-- `firmware` - MCU firmware workspaces.
-- `documentation` - reports, technical docs, mechanical docs, migration notes.
-- `pcb` - KiCad schematic/PCB and production files.
-- `advertising` - booklets, presentations, visual assets.
-- `_migration` - migration/import logs.
+## Documentation
 
-## 2) Where to find things quickly
+- Reports and explanatory materials: [`documentation/reports`](documentation/reports)
+- Engineering process notes: [`documentation/engineering`](documentation/engineering)
+- Mechanical CAD: [`documentation/mechanical_cad`](documentation/mechanical_cad)
+- Software architecture: [`documentation/software_stack_non_esp.md`](documentation/software_stack_non_esp.md)
+- Component and source map: [`documentation/materials_origin_and_import_map.md`](documentation/materials_origin_and_import_map.md)
 
-Android app:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\app\velopath3_project`
-- Release APK copies:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\app\releases`
+## Product materials
 
-STM32 firmware:
-- Primary tree:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\firmware`
-- Legacy/backup workspace:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\stm32_legacy_workspace`
+- Presentations: [`advertising/presentations`](advertising/presentations)
+- Brochures: [`advertising/brochures`](advertising/brochures)
+- Shared visual assets: [`advertising/assets`](advertising/assets)
+- Missing-component table: [`outputs`](outputs)
 
-ESP (all ESP code + artifacts + temp build data in one place):
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\esp`
-- Folder policy:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\esp\README.md`
-
-Reports and explanatory documents:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\reports\project_docs`
-- Explanatory note (Shanenkov):
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\reports\explanatory_note`
-- Reviews:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\reports\reviews`
-- Hardware audit (schematic + PCB, 2026-08-10):
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\reports\hardware_audit_2026-08-10`
-
-Engineering/process docs:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\engineering\process_docs`
-- Engineering visuals:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\engineering\visuals`
-
-Mechanical CAD docs:
-- Main assembly models:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\mechanical_cad\main_assembly_models`
-- Gearbox:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\mechanical_cad\gearbox`
-
-PCB:
-- Main PCB folder:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\pcb`
-
-Advertising:
-- Presentations:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\presentations`
-- Booklets:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\brochures`
-- Assets:
-  `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\advertising\assets`
-
-## 3) Navigation docs
-
-Project onboarding guide:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\START_HERE.md`
-
-Software stack (non-ESP):
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\software_stack_non_esp.md`
-
-Materials origin map:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\materials_origin_and_import_map.md`
-
-Migration reports:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\_migration\migration_report_2026-04-12.md`
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\_migration\flash_import_report_2026-04-12.md`
+Generated IDE workspaces, build output, firmware binaries, temporary test files,
+backups and machine-specific configuration are intentionally excluded from the
+repository. See [`.gitignore`](.gitignore).

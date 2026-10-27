@@ -18,14 +18,28 @@ app/velopath3_project/key
 **/captures/
 **/Debug/
 **/Release/
-app/releases/*.apk
-app/releases/*.apk_*
+**/app/release/
+**/classes.jar
+**/*.apk
+**/*.aab
+**/*.elf
+**/*.hex
+**/*.bin
+**/*.map
+**/*.log
+**/*.rpt
+**/*.net
+**/gdbsrv.log
 
 # IDE and OS files
 **/.idea/
 **/*.iml
 **/.DS_Store
 /.codex
+**/.metadata/
+**/.stm32_headless_ws/
+**/artifacts/
+**/.history/
 **/#auto_saved_files#
 **/_autosave-*.kicad_sch
 **/*.bak
@@ -36,3 +50,5 @@ app/releases/*.apk_*
 # Archives and generated backups
 **/backups/
 **/*.zip
+tmp/
+tmpdoc/

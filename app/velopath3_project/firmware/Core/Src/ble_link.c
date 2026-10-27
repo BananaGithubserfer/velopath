@@ -46,11 +46,6 @@ static uint32_t g_last_baud_switch_ms;
 static const uint32_t g_uart_probe_baud_rates[] = {115200U, 57600U, 38400U, 19200U, 9600U};
 static uint8_t g_uart_probe_index = 0U;
 static bool ble_link_enter_at_with_baud_probe(void);
-volatile uint32_t g_at_rx_count;
-volatile uint8_t g_at_last_byte;
-volatile uint8_t g_at_last_wait_result;
-volatile uint8_t g_at_capture[512];
-volatile uint16_t g_at_capture_index;
 
 static void ble_control_init(void) {
     GPIO_InitTypeDef output_init = {0};
@@ -77,11 +72,13 @@ static void ble_control_init(void) {
     HAL_GPIO_WritePin(BLE_NRESET_GPIO_PORT, BLE_NRESET_GPIO_PIN, GPIO_PIN_SET);
     HAL_Delay(800U);
 
-    /* Clear a potentially corrupted saved profile before provisioning. */
+#if BLE_PROVISION_ON_BOOT
+    /* Factory reset is a deliberate provisioning action, never a normal boot step. */
     HAL_GPIO_WritePin(BLE_NRELOAD_GPIO_PORT, BLE_NRELOAD_GPIO_PIN, GPIO_PIN_RESET);
     HAL_Delay(4000U);
     HAL_GPIO_WritePin(BLE_NRELOAD_GPIO_PORT, BLE_NRELOAD_GPIO_PIN, GPIO_PIN_SET);
     HAL_Delay(1200U);
+#endif
 }
 
 #if BLE_UART_LED_DIAG
@@ -173,12 +170,6 @@ static bool ble_uart_wait_for(const char *token, uint32_t timeout_ms) {
             continue;
         }
 
-        g_at_rx_count++;
-        g_at_last_byte = byte;
-        if (g_at_capture_index < sizeof(g_at_capture)) {
-            g_at_capture[g_at_capture_index++] = byte;
-        }
-
         if (index < (sizeof(window) - 1U)) {
             window[index++] = (char)byte;
             window[index] = '\0';
@@ -210,12 +201,6 @@ static bool ble_uart_wait_for_success_or_error(const char *success_token, uint32
     while ((HAL_GetTick() - started_at) < timeout_ms) {
         if (HAL_UART_Receive(&BLE_UART_HANDLE, &byte, 1U, 20U) != HAL_OK) {
             continue;
-        }
-
-        g_at_rx_count++;
-        g_at_last_byte = byte;
-        if (g_at_capture_index < sizeof(g_at_capture)) {
-            g_at_capture[g_at_capture_index++] = byte;
         }
 
         if (index < (sizeof(window) - 1U)) {
@@ -338,7 +323,6 @@ static bool ble_link_enter_at_with_baud_probe(void) {
 
     for (i = 0U; i < (sizeof(g_uart_probe_baud_rates) / sizeof(g_uart_probe_baud_rates[0])); ++i) {
         ble_uart_set_baud(g_uart_probe_baud_rates[i]);
-        g_at_last_wait_result = (uint8_t)i;
         HAL_Delay(120U);
         if (ble_link_enter_serial_at_mode()) {
             return true;
@@ -428,11 +412,6 @@ void ble_link_init(void) {
     memset(g_line_buffer, 0, sizeof(g_line_buffer));
     memset(g_ready_line, 0, sizeof(g_ready_line));
     memset(&g_status, 0, sizeof(g_status));
-    g_at_rx_count = 0U;
-    g_at_last_byte = 0U;
-    g_at_last_wait_result = 0U;
-    memset((void *)g_at_capture, 0, sizeof(g_at_capture));
-    g_at_capture_index = 0U;
 
     g_status.state = BLE_LINK_STATE_UNINITIALIZED;
     ble_control_init();
@@ -447,6 +426,7 @@ void ble_link_init(void) {
     g_status.config_attempts = 0U;
     g_status.config_applied = true;
     g_status.state = BLE_LINK_STATE_TRANSPARENT;
+    g_status.last_rx_tick_ms = HAL_GetTick();
     return;
 #endif
     g_status.config_applied = ble_link_apply_wh_ble106_profile();

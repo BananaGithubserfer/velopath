@@ -1,33 +1,14 @@
-# START HERE - quick onboarding
+# Start here
 
-If you are new to this project, use this order:
+Begin with the [project index](INDEX.md), then read the [software overview](documentation/software_stack_non_esp.md).
 
-1. Open project map:
-   `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\INDEX.md`
-2. Read software overview (non-ESP):
-   `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\software_stack_non_esp.md`
-3. Read materials/source map:
-   `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\materials_origin_and_import_map.md`
+## Common tasks
 
-## Fast path by task
-
-Mobile app:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\app\velopath3_project`
-
-STM32 firmware:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\firmware`
-
-ESP work:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\firmware\esp`
-
-PCB/electronics:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\pcb`
-
-Reports and explanatory docs:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\reports`
-
-Engineering/process docs:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\engineering`
-
-Mechanical CAD docs:
-- `C:\Users\vladimir.DESKTOP-L4RFPI0\Documents\velopath\documentation\mechanical_cad`
+- Android application: [`app/velopath3_project`](app/velopath3_project)
+- STM32 firmware: [`app/velopath3_project/firmware`](app/velopath3_project/firmware)
+- Firmware diagnostics: [`app/velopath3_project/firmware/tools`](app/velopath3_project/firmware/tools)
+- ESP firmware: [`firmware/esp`](firmware/esp)
+- PCB/electronics: [`pcb`](pcb)
+- Reports: [`documentation/reports`](documentation/reports)
+- Engineering docs: [`documentation/engineering`](documentation/engineering)
+- Mechanical CAD: [`documentation/mechanical_cad`](documentation/mechanical_cad)

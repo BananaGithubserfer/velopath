@@ -15,3 +15,10 @@
 local.properties
 keystore.properties
 *.jks
+/app/release
+/app/classes.jar
+/firmware/Debug
+/firmware/Release
+/firmware/.stm32_headless_ws
+/firmware/artifacts
+/firmware/*.log

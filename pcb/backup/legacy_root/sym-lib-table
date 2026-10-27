@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "velopath")(type "KiCad")(uri "${KIPRJMOD}/velopath.kicad_sym")(options "")(descr ""))
-)
