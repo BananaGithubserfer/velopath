@@ -644,6 +644,11 @@ bool console_diag_try_handle(const char *line) {
           return true;
       }
     if (strncmp(command, "esc ", 4) == 0) {
+#if !ESC_ENABLED
+        console_diag_printf("esc=disabled\r\n");
+        console_diag_print_prompt();
+        return true;
+#else
         esc_percent = strtol(command + 4, &endptr, 10);
         if (endptr != command + 4 && *endptr == '\0' && esc_percent >= 0 && esc_percent <= 100) {
             motor_control_set_right_percent((uint8_t)esc_percent);
@@ -651,6 +656,7 @@ bool console_diag_try_handle(const char *line) {
             console_diag_print_prompt();
             return true;
         }
+#endif
     }
 
     return false;

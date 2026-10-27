@@ -61,6 +61,14 @@ void Error_Handler(void);
 #define LEFT_MOTOR_GPIO_Port GPIOC
 #define RIGHT_MOTOR_Pin GPIO_PIN_2
 #define RIGHT_MOTOR_GPIO_Port GPIOC
+#define BLE_NRESET_Pin GPIO_PIN_4
+#define BLE_NRESET_GPIO_Port GPIOA
+#define BLE_LINK_Pin GPIO_PIN_5
+#define BLE_LINK_GPIO_Port GPIOA
+#define BLE_NWAKE_Pin GPIO_PIN_4
+#define BLE_NWAKE_GPIO_Port GPIOC
+#define BLE_NRELOAD_Pin GPIO_PIN_5
+#define BLE_NRELOAD_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
 

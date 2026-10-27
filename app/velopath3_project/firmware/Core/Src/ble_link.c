@@ -4,14 +4,14 @@
 
 #include <string.h>
 
-#define BLE_UART_DEFAULT_BAUD 115200U
+#define BLE_UART_DEFAULT_BAUD 57600U
 #define BLE_BOOT_DELAY_MS 4500U
 #define BLE_AT_GUARD_TIME_MS 350U
 #define BLE_AT_REPLY_TIMEOUT_MS 320U
 #define BLE_AT_CONFIRM_TIMEOUT_MS 3000U
 #define BLE_AT_COMMAND_TIMEOUT_MS 1500U
 #define BLE_CONFIG_RETRY_COUNT 3U
-#define BLE_LINE_IDLE_TIMEOUT_MS 40U
+#define BLE_LINE_IDLE_TIMEOUT_MS 250U
 #define BLE_BAUD_AUTOPROBE_INTERVAL_MS 1200U
 
 typedef struct {
@@ -23,19 +23,14 @@ typedef struct {
 
 static const ble_at_command_t g_runtime_config_commands[] = {
     {"AT+NAME=VeloPath\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
-    {"AT+UART=115200,8,0,0\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
-    {"AT+MODE=S\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
+    {"AT+UART=57600,8,1,0\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+WMODE=0\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
-    {"AT+UUID=AA+0003CDD0\r\n", "successful", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
-    {"AT+UUID=BB+0003CDD1\r\n", "successful", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
-    {"AT+UUID=CC+0003CDD2\r\n", "successful", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
-    {"AT+ADP=ON\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+MULTILINK=OFF\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+PAIR=OFF\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+PASSEN=OFF\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+TRENC=OFF\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+ADPTIM=10\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
-    {"AT+NOTIFY=ON\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
+    {"AT+NOTIFY=OFF\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+UARTFT=3\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+PKLEN=200\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+AUTOSLEEP=OFF,5\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U}
@@ -50,6 +45,65 @@ static ble_link_status_t g_status;
 static uint32_t g_last_baud_switch_ms;
 static const uint32_t g_uart_probe_baud_rates[] = {115200U, 57600U, 38400U, 19200U, 9600U};
 static uint8_t g_uart_probe_index = 0U;
+static bool ble_link_enter_at_with_baud_probe(void);
+volatile uint32_t g_at_rx_count;
+volatile uint8_t g_at_last_byte;
+volatile uint8_t g_at_last_wait_result;
+volatile uint8_t g_at_capture[512];
+volatile uint16_t g_at_capture_index;
+
+static void ble_control_init(void) {
+    GPIO_InitTypeDef output_init = {0};
+    GPIO_InitTypeDef link_init = {0};
+
+    output_init.Pin = BLE_NRESET_GPIO_PIN;
+    output_init.Mode = GPIO_MODE_OUTPUT_PP;
+    output_init.Pull = GPIO_NOPULL;
+    output_init.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(BLE_NRESET_GPIO_PORT, &output_init);
+
+    output_init.Pin = BLE_NWAKE_GPIO_PIN | BLE_NRELOAD_GPIO_PIN;
+    HAL_GPIO_Init(BLE_NWAKE_GPIO_PORT, &output_init);
+
+    link_init.Pin = BLE_LINK_GPIO_PIN;
+    link_init.Mode = GPIO_MODE_INPUT;
+    link_init.Pull = GPIO_PULLUP;
+    HAL_GPIO_Init(BLE_LINK_GPIO_PORT, &link_init);
+
+    HAL_GPIO_WritePin(BLE_NRELOAD_GPIO_PORT, BLE_NRELOAD_GPIO_PIN, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(BLE_NWAKE_GPIO_PORT, BLE_NWAKE_GPIO_PIN, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(BLE_NRESET_GPIO_PORT, BLE_NRESET_GPIO_PIN, GPIO_PIN_RESET);
+    HAL_Delay(80U);
+    HAL_GPIO_WritePin(BLE_NRESET_GPIO_PORT, BLE_NRESET_GPIO_PIN, GPIO_PIN_SET);
+    HAL_Delay(800U);
+
+    /* Clear a potentially corrupted saved profile before provisioning. */
+    HAL_GPIO_WritePin(BLE_NRELOAD_GPIO_PORT, BLE_NRELOAD_GPIO_PIN, GPIO_PIN_RESET);
+    HAL_Delay(4000U);
+    HAL_GPIO_WritePin(BLE_NRELOAD_GPIO_PORT, BLE_NRELOAD_GPIO_PIN, GPIO_PIN_SET);
+    HAL_Delay(1200U);
+}
+
+#if BLE_UART_LED_DIAG
+static void ble_uart_led_diag_init(void) {
+    GPIO_InitTypeDef gpio_init = {0};
+    gpio_init.Pin = LEFT_MOTOR_GPIO_PIN | RIGHT_MOTOR_GPIO_PIN;
+    gpio_init.Mode = GPIO_MODE_OUTPUT_PP;
+    gpio_init.Pull = GPIO_NOPULL;
+    gpio_init.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(LEFT_MOTOR_GPIO_PORT, &gpio_init);
+    HAL_GPIO_WritePin(LEFT_MOTOR_GPIO_PORT, LEFT_MOTOR_GPIO_PIN, LEFT_MOTOR_INACTIVE_STATE);
+    HAL_GPIO_WritePin(RIGHT_MOTOR_GPIO_PORT, RIGHT_MOTOR_GPIO_PIN, RIGHT_MOTOR_INACTIVE_STATE);
+}
+
+static void ble_uart_led_diag_pulse(GPIO_PinState left_state, GPIO_PinState right_state) {
+    HAL_GPIO_WritePin(LEFT_MOTOR_GPIO_PORT, LEFT_MOTOR_GPIO_PIN, left_state);
+    HAL_GPIO_WritePin(RIGHT_MOTOR_GPIO_PORT, RIGHT_MOTOR_GPIO_PIN, right_state);
+    HAL_Delay(80U);
+    HAL_GPIO_WritePin(LEFT_MOTOR_GPIO_PORT, LEFT_MOTOR_GPIO_PIN, LEFT_MOTOR_INACTIVE_STATE);
+    HAL_GPIO_WritePin(RIGHT_MOTOR_GPIO_PORT, RIGHT_MOTOR_GPIO_PIN, RIGHT_MOTOR_INACTIVE_STATE);
+}
+#endif
 
 #if BLE_LED_DEBUG
 static void ble_led_diag_init(void) {
@@ -119,6 +173,12 @@ static bool ble_uart_wait_for(const char *token, uint32_t timeout_ms) {
             continue;
         }
 
+        g_at_rx_count++;
+        g_at_last_byte = byte;
+        if (g_at_capture_index < sizeof(g_at_capture)) {
+            g_at_capture[g_at_capture_index++] = byte;
+        }
+
         if (index < (sizeof(window) - 1U)) {
             window[index++] = (char)byte;
             window[index] = '\0';
@@ -150,6 +210,12 @@ static bool ble_uart_wait_for_success_or_error(const char *success_token, uint32
     while ((HAL_GetTick() - started_at) < timeout_ms) {
         if (HAL_UART_Receive(&BLE_UART_HANDLE, &byte, 1U, 20U) != HAL_OK) {
             continue;
+        }
+
+        g_at_rx_count++;
+        g_at_last_byte = byte;
+        if (g_at_capture_index < sizeof(g_at_capture)) {
+            g_at_capture[g_at_capture_index++] = byte;
         }
 
         if (index < (sizeof(window) - 1U)) {
@@ -247,6 +313,21 @@ static bool ble_link_apply_command_list(const ble_at_command_t *commands, uint32
         if (!ble_link_send_at_command(&commands[i])) {
             return false;
         }
+
+        /* The module changes baud immediately after accepting this command. */
+        if (strcmp(commands[i].command, "AT+UART=57600,8,1,0\r\n") == 0) {
+            ble_uart_set_baud(BLE_UART_DEFAULT_BAUD);
+            HAL_Delay(120U);
+        }
+
+        /* MODE changes reboot the module; re-enter AT mode before continuing. */
+        if (strcmp(commands[i].command, "AT+MODE=S\r\n") == 0) {
+            HAL_Delay(BLE_BOOT_DELAY_MS);
+            ble_uart_flush(5U);
+            if (!ble_link_enter_at_with_baud_probe()) {
+                return false;
+            }
+        }
     }
 
     return true;
@@ -257,6 +338,7 @@ static bool ble_link_enter_at_with_baud_probe(void) {
 
     for (i = 0U; i < (sizeof(g_uart_probe_baud_rates) / sizeof(g_uart_probe_baud_rates[0])); ++i) {
         ble_uart_set_baud(g_uart_probe_baud_rates[i]);
+        g_at_last_wait_result = (uint8_t)i;
         HAL_Delay(120U);
         if (ble_link_enter_serial_at_mode()) {
             return true;
@@ -292,14 +374,6 @@ static bool ble_link_apply_wh_ble106_profile(void) {
 #if BLE_LED_DEBUG
         ble_led_diag_set(1U, 1U);
 #endif
-        if (!ble_uart_send_raw("AT\r\n") ||
-            !ble_uart_wait_for_success_or_error("OK", BLE_AT_COMMAND_TIMEOUT_MS)) {
-#if BLE_LED_DEBUG
-            ble_led_diag_pulse(1U, 1U, 180U);
-#endif
-            continue;
-        }
-
         if (!ble_link_apply_command_list(g_runtime_config_commands,
                                          sizeof(g_runtime_config_commands) / sizeof(g_runtime_config_commands[0]))) {
 #if BLE_LED_DEBUG
@@ -308,15 +382,16 @@ static bool ble_link_apply_wh_ble106_profile(void) {
             continue;
         }
 
-        if (!ble_uart_send_raw("AT+Z\r\n") ||
-            !ble_uart_wait_for_success_or_error("+RST:OK", 4000U)) {
+        /* WMODE=0 selects transparent data mode; ENTM leaves serial AT mode. */
+        if (!ble_uart_send_raw("AT+ENTM\r\n") ||
+            !ble_uart_wait_for_success_or_error("OK", BLE_AT_COMMAND_TIMEOUT_MS)) {
 #if BLE_LED_DEBUG
             ble_led_diag_pulse(1U, 1U, 220U);
 #endif
             continue;
         }
 
-        HAL_Delay(1200U);
+        HAL_Delay(200U);
         ble_uart_flush(5U);
 #if BLE_LED_DEBUG
         ble_led_diag_pulse(1U, 1U, 320U);
@@ -353,11 +428,27 @@ void ble_link_init(void) {
     memset(g_line_buffer, 0, sizeof(g_line_buffer));
     memset(g_ready_line, 0, sizeof(g_ready_line));
     memset(&g_status, 0, sizeof(g_status));
+    g_at_rx_count = 0U;
+    g_at_last_byte = 0U;
+    g_at_last_wait_result = 0U;
+    memset((void *)g_at_capture, 0, sizeof(g_at_capture));
+    g_at_capture_index = 0U;
 
     g_status.state = BLE_LINK_STATE_UNINITIALIZED;
+    ble_control_init();
+#if BLE_UART_LED_DIAG
+    ble_uart_led_diag_init();
+#endif
     ble_uart_set_baud(BLE_UART_DEFAULT_BAUD);
     g_uart_probe_index = 0U;
     g_last_baud_switch_ms = HAL_GetTick();
+#if !BLE_PROVISION_ON_BOOT
+    /* Keep the module's saved profile and start the transparent data path. */
+    g_status.config_attempts = 0U;
+    g_status.config_applied = true;
+    g_status.state = BLE_LINK_STATE_TRANSPARENT;
+    return;
+#endif
     g_status.config_applied = ble_link_apply_wh_ble106_profile();
     g_status.state = g_status.config_applied ? BLE_LINK_STATE_TRANSPARENT : BLE_LINK_STATE_DEGRADED;
     g_status.last_rx_tick_ms = HAL_GetTick();
@@ -409,6 +500,9 @@ void ble_link_poll_uart(void) {
 
     if (got_any_byte) {
         g_status.state = BLE_LINK_STATE_TRANSPARENT;
+#if BLE_UART_LED_DIAG
+        ble_uart_led_diag_pulse(LEFT_MOTOR_ACTIVE_STATE, RIGHT_MOTOR_INACTIVE_STATE);
+#endif
         return;
     }
 
@@ -434,7 +528,13 @@ bool ble_link_poll_line(char *out_line, uint16_t out_size) {
 }
 
 bool ble_link_write(const char *text) {
-    return ble_uart_send_raw(text);
+    bool sent = ble_uart_send_raw(text);
+#if BLE_UART_LED_DIAG
+    if (sent && g_status.state == BLE_LINK_STATE_TRANSPARENT) {
+        ble_uart_led_diag_pulse(LEFT_MOTOR_INACTIVE_STATE, RIGHT_MOTOR_ACTIVE_STATE);
+    }
+#endif
+    return sent;
 }
 
 void ble_link_get_status(ble_link_status_t *out_status) {

@@ -9391,16 +9391,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.25 1)
-			(end -1 1.25)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "4b754d20-a11a-4d22-a389-c4ddd9742619")
-		)
-		(fp_line
 			(start -1 1.25)
 			(end 1.25 1.25)
 			(stroke
@@ -9421,14 +9411,14 @@
 			(uuid "2474aa2e-1b7c-41f1-976b-d1a8b396ce1a")
 		)
 		(fp_line
-			(start 1.25 -1.25)
-			(end -1.25 -1.25)
+			(start -1.25 1)
+			(end -1 1.25)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "0fc48d28-75bc-4c4e-a84c-9429a13cf955")
+			(uuid "4b754d20-a11a-4d22-a389-c4ddd9742619")
 		)
 		(fp_line
 			(start -1.25 -1.25)
@@ -9439,6 +9429,16 @@
 			)
 			(layer "B.SilkS")
 			(uuid "ef7bca49-dd77-4f3c-a3a1-a6ba8dcdf6ec")
+		)
+		(fp_line
+			(start 1.25 -1.25)
+			(end -1.25 -1.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "0fc48d28-75bc-4c4e-a84c-9429a13cf955")
 		)
 		(fp_line
 			(start -1.25 1.25)
@@ -17939,14 +17939,6 @@
 		(layer "F.Cu")
 		(net "+3.3V")
 		(uuid "1bcefa35-1a90-41c7-a9e8-8da7d81cb05a")
-	)
-	(segment
-		(start 33.4 28.6)
-		(end 33.45 28.55)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "+3.3V")
-		(uuid "2aeb8097-1228-44ab-bfd9-39dc7954a329")
 	)
 	(segment
 		(start 26.5 28.898997)
