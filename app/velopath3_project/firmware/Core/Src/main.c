@@ -121,6 +121,10 @@ static void run_pin_test_mode(void) {
 #endif
 
 static void heartbeat_update(uint32_t now_ms) {
+#if !BLE_IDLE_HEARTBEAT
+  (void)now_ms;
+  return;
+#else
   static uint8_t gpio_ready = 0U;
   GPIO_InitTypeDef gpio_init = {0};
   ble_link_status_t ble_status;
@@ -167,6 +171,7 @@ static void heartbeat_update(uint32_t now_ms) {
                     left_on ? LEFT_MOTOR_ACTIVE_STATE : LEFT_MOTOR_INACTIVE_STATE);
   HAL_GPIO_WritePin(RIGHT_MOTOR_GPIO_PORT, RIGHT_MOTOR_GPIO_PIN,
                     right_on ? RIGHT_MOTOR_ACTIVE_STATE : RIGHT_MOTOR_INACTIVE_STATE);
+#endif
 }
 
 #if BLE_LED_DEBUG

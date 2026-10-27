@@ -40,6 +40,7 @@ app/velopath3_project/key
 **/.stm32_headless_ws/
 **/artifacts/
 **/.history/
+**/__pycache__/
 **/#auto_saved_files#
 **/_autosave-*.kicad_sch
 **/*.bak

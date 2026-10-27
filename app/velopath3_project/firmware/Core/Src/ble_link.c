@@ -423,6 +423,7 @@ void ble_link_init(void) {
     g_last_baud_switch_ms = HAL_GetTick();
 #if !BLE_PROVISION_ON_BOOT
     /* Keep the module's saved profile and start the transparent data path. */
+    HAL_Delay(BLE_BOOT_DELAY_MS);
     g_status.config_attempts = 0U;
     g_status.config_applied = true;
     g_status.state = BLE_LINK_STATE_TRANSPARENT;
