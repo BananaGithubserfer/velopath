@@ -29,7 +29,6 @@
 #include "board_config.h"
 #include "console_diag.h"
 #include "compass_lis3mdl.h"
-#include "heartbeat.h"
 #include "motor_control.h"
 #include "navigation_controller.h"
 
@@ -62,6 +61,7 @@ static nav_command_t nav_command;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+static void heartbeat_update(uint32_t now_ms);
 #if BLE_LED_DEBUG
 static void ble_tx_debug_update(uint32_t now_ms);
 static void ble_baud_probe_update(uint32_t now_ms);
@@ -119,6 +119,60 @@ static void run_pin_test_mode(void) {
   }
 }
 #endif
+
+static void heartbeat_update(uint32_t now_ms) {
+#if !BLE_IDLE_HEARTBEAT
+  (void)now_ms;
+  return;
+#else
+  static uint8_t gpio_ready = 0U;
+  GPIO_InitTypeDef gpio_init = {0};
+  ble_link_status_t ble_status;
+  uint32_t phase_ms = 0U;
+  uint8_t left_on = 0U;
+  uint8_t right_on = 0U;
+  uint8_t rx_burst = 0U;
+
+  if (motor_control_get_left_percent() != 0U || motor_control_get_right_percent() != 0U) {
+    return;
+  }
+
+  if (gpio_ready == 0U) {
+    gpio_init.Pin = LEFT_MOTOR_GPIO_PIN | RIGHT_MOTOR_GPIO_PIN;
+    gpio_init.Mode = GPIO_MODE_OUTPUT_PP;
+    gpio_init.Pull = GPIO_NOPULL;
+    gpio_init.Speed = GPIO_SPEED_FREQ_HIGH;
+    HAL_GPIO_Init(LEFT_MOTOR_GPIO_PORT, &gpio_init);
+    gpio_ready = 1U;
+  }
+
+  ble_link_get_status(&ble_status);
+  if (ble_status.state == BLE_LINK_STATE_TRANSPARENT &&
+      (now_ms - ble_status.last_rx_tick_ms) < 120U) {
+    rx_burst = 1U;
+  }
+
+  if (ble_status.state == BLE_LINK_STATE_TRANSPARENT) {
+    if (rx_burst != 0U) {
+      left_on = 1U;
+      right_on = 1U;
+    } else {
+      phase_ms = now_ms % 1000U;
+      left_on = 0U;
+      right_on = (phase_ms < 140U) ? 1U : 0U;
+    }
+  } else {
+    phase_ms = now_ms % 500U;
+    left_on = (phase_ms < 250U) ? 1U : 0U;
+    right_on = 0U;
+  }
+
+  HAL_GPIO_WritePin(LEFT_MOTOR_GPIO_PORT, LEFT_MOTOR_GPIO_PIN,
+                    left_on ? LEFT_MOTOR_ACTIVE_STATE : LEFT_MOTOR_INACTIVE_STATE);
+  HAL_GPIO_WritePin(RIGHT_MOTOR_GPIO_PORT, RIGHT_MOTOR_GPIO_PIN,
+                    right_on ? RIGHT_MOTOR_ACTIVE_STATE : RIGHT_MOTOR_INACTIVE_STATE);
+#endif
+}
 
 #if BLE_LED_DEBUG
 static void ble_tx_debug_update(uint32_t now_ms) {
@@ -237,7 +291,6 @@ int main(void)
   run_pin_test_mode();
 #endif
   motor_control_init();
-  heartbeat_init();
   navigation_controller_init();
   compass_lis3mdl_init();
   ble_link_init();
