@@ -23,7 +23,7 @@ typedef struct {
 
 static const ble_at_command_t g_runtime_config_commands[] = {
     {"AT+NAME=VeloPath\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
-    {"AT+UART=57600,8,1,0\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
+    {"AT+UART=57600,8,0,0\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+WMODE=0\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+MULTILINK=OFF\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
     {"AT+PAIR=OFF\r\n", "OK", BLE_AT_COMMAND_TIMEOUT_MS, 120U},
@@ -300,7 +300,7 @@ static bool ble_link_apply_command_list(const ble_at_command_t *commands, uint32
         }
 
         /* The module changes baud immediately after accepting this command. */
-        if (strcmp(commands[i].command, "AT+UART=57600,8,1,0\r\n") == 0) {
+        if (strcmp(commands[i].command, "AT+UART=57600,8,0,0\r\n") == 0) {
             ble_uart_set_baud(BLE_UART_DEFAULT_BAUD);
             HAL_Delay(120U);
         }

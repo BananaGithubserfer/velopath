@@ -4,7 +4,7 @@ from typing import Optional
 
 from bleak import BleakClient, BleakScanner
 
-TARGET_NAME = "WH-BLE 106"
+TARGET_NAME = "VeloPath"
 NOTIFY_UUID = "0003cdd1-0000-1000-8000-00805f9b0131"
 WRITE_UUID = "0003cdd2-0000-1000-8000-00805f9b0131"
 PROMPT_TOKEN = b"> "
@@ -70,15 +70,13 @@ async def run_full_test_once() -> bool:
         for cmd in [
             "ping",
             "status",
-            "compass raw",
-            "compass",
-            "compass stream on",
             "left pulse",
             "right pulse",
             "both pulse",
             "stop",
         ]:
             print(f"\n>> {cmd}")
+            rx_buffer.clear()
             await send(cmd)
             await wait_prompt(3.0)
 

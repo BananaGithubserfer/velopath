@@ -3,6 +3,7 @@
 #include "ble_link.h"
 #include "board_config.h"
 #include "compass_lis3mdl.h"
+#include "heartbeat.h"
 #include "motor_control.h"
 #include "navigation_controller.h"
 
@@ -144,6 +145,7 @@ static void print_help(void) {
         "  compass, compass status, compass raw, compass whoami, compass reinit\r\n"
         "  compass zero, compass zero set, compass zero clear\r\n"
         "  compass stream on/off/status, compass stream <period_ms>\r\n"
+        "  heartbeat, heartbeat on/off\r\n"
         "  led left on/off/pulse, led right on/off/pulse, led both on/off/pulse\r\n"
         "  left on/off/pulse, right on/off/pulse, both on/off/pulse, stop\r\n"
         "  esc arm, esc calibrate, esc min, esc max, esc on, esc off, esc 0..100\r\n"
@@ -449,6 +451,20 @@ bool console_diag_try_handle(const char *line) {
         return true;
     }
 
+    if (strcmp(command, "heartbeat") == 0 || strcmp(command, "heartbeat on") == 0) {
+        heartbeat_start();
+        console_diag_printf("heartbeat=on pattern=left-off-right-off period_ms=500\r\n");
+        console_diag_print_prompt();
+        return true;
+    }
+    if (strcmp(command, "heartbeat off") == 0) {
+        heartbeat_stop();
+        motor_control_stop_all();
+        console_diag_printf("heartbeat=off outputs=off\r\n");
+        console_diag_print_prompt();
+        return true;
+    }
+
     if (strcmp(command, "compass") == 0 || strcmp(command, "compass heading") == 0) {
         if (compass_lis3mdl_read_heading_degrees(&heading_deg)) {
             float relative_deg = 0.0f;
@@ -554,18 +570,21 @@ bool console_diag_try_handle(const char *line) {
     }
 
     if (strcmp(command, "led left on") == 0 || strcmp(command, "left on") == 0) {
+        heartbeat_stop();
         motor_control_set_left_percent(100U);
         console_diag_printf("left=on\r\n");
         console_diag_print_prompt();
         return true;
     }
     if (strcmp(command, "led left off") == 0 || strcmp(command, "left off") == 0) {
+        heartbeat_stop();
         motor_control_set_left_percent(0U);
         console_diag_printf("left=off\r\n");
         console_diag_print_prompt();
         return true;
     }
     if (strcmp(command, "led left pulse") == 0 || strcmp(command, "left pulse") == 0) {
+        heartbeat_stop();
         motor_control_pulse_left(COMMAND_PULSE_MS);
         console_diag_printf("left=pulse\r\n");
         console_diag_print_prompt();
@@ -573,18 +592,21 @@ bool console_diag_try_handle(const char *line) {
     }
 
     if (strcmp(command, "led right on") == 0 || strcmp(command, "right on") == 0) {
+        heartbeat_stop();
         motor_control_set_right_percent(100U);
         console_diag_printf("right=on\r\n");
         console_diag_print_prompt();
         return true;
     }
     if (strcmp(command, "led right off") == 0 || strcmp(command, "right off") == 0) {
+        heartbeat_stop();
         motor_control_set_right_percent(0U);
         console_diag_printf("right=off\r\n");
         console_diag_print_prompt();
         return true;
     }
     if (strcmp(command, "led right pulse") == 0 || strcmp(command, "right pulse") == 0) {
+        heartbeat_stop();
         motor_control_pulse_right(COMMAND_PULSE_MS);
         console_diag_printf("right=pulse\r\n");
         console_diag_print_prompt();
@@ -592,6 +614,7 @@ bool console_diag_try_handle(const char *line) {
     }
 
     if (strcmp(command, "led both on") == 0 || strcmp(command, "both on") == 0) {
+        heartbeat_stop();
         motor_control_set_left_percent(100U);
         motor_control_set_right_percent(100U);
         console_diag_printf("both=on\r\n");
@@ -599,6 +622,7 @@ bool console_diag_try_handle(const char *line) {
         return true;
     }
     if (strcmp(command, "led both off") == 0 || strcmp(command, "both off") == 0 || strcmp(command, "stop") == 0) {
+        heartbeat_stop();
         navigation_controller_stop();
         motor_control_stop_all();
         console_diag_printf("outputs=off\r\n");
@@ -606,6 +630,7 @@ bool console_diag_try_handle(const char *line) {
         return true;
     }
     if (strcmp(command, "led both pulse") == 0 || strcmp(command, "both pulse") == 0) {
+        heartbeat_stop();
         motor_control_pulse_both(COMMAND_PULSE_MS);
         console_diag_printf("both=pulse\r\n");
         console_diag_print_prompt();

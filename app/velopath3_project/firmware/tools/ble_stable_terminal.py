@@ -414,6 +414,9 @@ async def scripted_terminal(client: WinRtConsoleSession, rx_buffer: bytearray, c
     print("SCRIPT MODE")
     for command in commands:
         print(f"\n>> {command}")
+        # Commands such as navigation JSON intentionally have no response;
+        # discard the previous prompt before waiting for the next command.
+        rx_buffer.clear()
         await send_line(client, command)
         await wait_for_prompt(rx_buffer, timeout_s=2.5)
 
